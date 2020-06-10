@@ -1,3 +1,5 @@
+# this file is used for importing information in main.py on all the valorant weapons
+
 import discord
 
 class sideArms:
@@ -6,7 +8,7 @@ class sideArms:
     
     embed = discord.Embed (title='**Side Arms (Weapon Class) \nClassic (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -36,7 +38,7 @@ class sideArms:
     
     embed = discord.Embed (title='**Side Arms (Weapon Class) \nShorty (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -67,7 +69,7 @@ class sideArms:
     
     embed = discord.Embed (title='**Side Arms (Weapon Class) \nFrenzy (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -97,7 +99,7 @@ class sideArms:
     
     embed = discord.Embed (title='**Side Arms (Weapon Class) \nGhost (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -126,7 +128,7 @@ class sideArms:
     
     embed = discord.Embed (title='**Side Arms (Weapon Class) \nSheriff (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -157,7 +159,7 @@ class submachineGuns:
     
     embed = discord.Embed (title='**SMG\'s (Weapon Class) \nStinger (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -186,7 +188,7 @@ class submachineGuns:
     
     embed = discord.Embed (title='**SMG\'s (Weapon Class) \nSpectre (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -218,7 +220,7 @@ class normalRifles:
     
     embed = discord.Embed (title='**Rifles\'s (Weapon Class) \nBulldog (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -245,7 +247,7 @@ class normalRifles:
     
     embed = discord.Embed (title='**Rifles\'s (Weapon Class) \nGuardian (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -272,7 +274,7 @@ class normalRifles:
     
     embed = discord.Embed (title='**Rifles\'s (Weapon Class) \nPhantom (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -303,7 +305,7 @@ class normalRifles:
     
     embed = discord.Embed (title='**Rifles\'s (Weapon Class) \nVandal (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -332,7 +334,7 @@ class shotguns:
     
     embed = discord.Embed (title='**Shotguns (Weapon Class) \nBucky (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -363,7 +365,7 @@ class shotguns:
     
     embed = discord.Embed (title='**Shotguns (Weapon Class) \nJudge (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -397,7 +399,7 @@ class heavyRifles:
     
     embed = discord.Embed (title='**Heavy Rifles (Weapon Class) \nAres (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -426,7 +428,7 @@ class heavyRifles:
     
     embed = discord.Embed (title='**Heavy Rifles (Weapon Class) \nOdin (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -457,7 +459,7 @@ class sniperRifles:
     
     embed = discord.Embed (title='**Sniper Rifles (Weapon Class) \nMarshal (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -484,7 +486,7 @@ class sniperRifles:
     
     embed = discord.Embed (title='**Sniper Rifles (Weapon Class) \nOperator (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -513,7 +515,7 @@ class meleeCombat:
     
     embed = discord.Embed (title='** Melee Combat (Weapon Class) \nKnife (Weapon)**', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -537,7 +539,7 @@ class invalidMessage:
   
     embed = discord.Embed(title="Invalid Command Usage", color=0xFF0000)
     
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
       
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
