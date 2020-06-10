@@ -1,3 +1,5 @@
+# this file is used for importing information in main.py on all the valorant maps
+
 import discord
 
 def Ascent():
