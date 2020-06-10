@@ -40,11 +40,6 @@ client.remove_command('help')
 # bot on ready and intialized
 @client.event
 async def on_ready():
-    
-    #dev = "Developement | Please Do Not Use Bot"
-    #status1 = "Valorant Player Statistics | v!help"
-    #status2 = "Valorant Streams | v!help"
-    #status3 = "Out For Patch Notes | v!help"
 
     print('Veloxis Discord Bot \nDiscord Bot Up and Running on Harsh\'s Dell Laptop \nBot developed by Harsh Dadhich, Vrushank Prakash, Deepak Ananthkrishnan \n\n')
     
@@ -112,7 +107,7 @@ async def help(ctx):
 
   embed1.add_field(name=help_section[2], value='**`v!agent <name>` (aliases = `v!ag`)** \n • Agent Origin \n • Agent Class \n • Agent Abilities', inline=False)
 
-  await ctx.send (embed=embed1)
+  # await ctx.send (embed=embed1)
 
 
   # Page 2
@@ -137,7 +132,7 @@ async def help(ctx):
 
   embed.add_field(name=help_section[10], value='**Extra Commands and Information** \n • `v!help` → displays this help section \n • `v!ping` → displays latency, uptime, and   CPU/RAM usage \n • `v!botinfo` → displays information on this    bot, the invite link, Official Website, and Support Server Link \n\n*the names (of weapons, agents, maps, etc.) are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
     
-  print('Help Command Called')
+  print('HELP Command Called')
   await ctx.send(embed=embed)
 
 ################################################################################
@@ -157,7 +152,7 @@ async def stats(ctx):
 
   embed.add_field(name='**`v!stats`**', value='[Coming Soon] Developers waiting on [tracker.gg](https://tracker.gg/valorant) to release player tracking', inline=False)
 
-  print('Player Stats Command Called')
+  print('STATS Command Called')
   
   await ctx.send (embed=embed)
 
@@ -201,7 +196,7 @@ async def agents(ctx):
     embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual agent, please use \n**`v!ag <name>`** (aliases = **`v!agent`**) \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!ag sova`** or **`v!ag Sova`***', inline=False)
 
 
-    print('Agent List Command Called')
+    print('AGENT LIST Command Called')
     
     await ctx.send (embed=embed)
 
@@ -214,62 +209,62 @@ async def agent(ctx, agentName):
   if agentName == 'Breach' or agentName == 'breach':
     agent_list.Breach()
     await ctx.send (embed=agent_list.Breach())
-    print('Agent Breach Command Called')
+    print('AGENT BREACH Command Called')
 
   elif agentName == 'Brimstone' or agentName == 'brimstone':
     agent_list.Brimstone()
     await ctx.send (embed=agent_list.Brimstone())
-    print('Agent Brimstone Command Called')
+    print('AGENT BRIMSTONE Command Called')
 
   elif agentName == 'Cypher' or agentName == 'cypher':
     agent_list.Cypher()
     await ctx.send (embed=agent_list.Cypher())
-    print('Agent Cypher Command Called')
+    print('AGENT CYPHER Command Called')
 
   elif agentName == 'Jett' or agentName == 'jett':
     agent_list.Jett()
     await ctx.send (embed=agent_list.Jett())
-    print('Agent Jett Command Called')
+    print('AGENT JETT Command Called')
 
   elif agentName == 'Omen' or agentName == 'omen':
     agent_list.Omen()
     await ctx.send (embed=agent_list.Omen())
-    print('Agent Omen Command Called')
+    print('AGENT OMEN Command Called')
 
   elif agentName == 'Phoenix' or agentName == 'phoenix':
     agent_list.Phoenix()
     await ctx.send (embed=agent_list.Phoenix())
-    print('Agent Phoenix Command Called')
+    print('AGENT PHOENIX Command Called')
 
   elif agentName == 'Raze' or agentName == 'raze':
     agent_list.Raze()
     await ctx.send (embed=agent_list.Raze())
-    print('Agent Raze Command Called')
+    print('AGENT RAZE Command Called')
 
   elif agentName == 'Reyna' or agentName == 'reyna':
     agent_list.Reyna()
     await ctx.send (embed=agent_list.Reyna())
-    print('Agent Reyna Command Called')
+    print('AGENT REYNA Command Called')
 
   elif agentName == 'Sage' or agentName == 'sage':
     agent_list.Sage()
     await ctx.send (embed=agent_list.Sage())
-    print('Agent Sage Command Called')
+    print('AGENT SAGE Command Called')
 
   elif agentName == 'Sova' or agentName == 'sova':
     agent_list.Sova()
     await ctx.send (embed=agent_list.Sova())
-    print('Agent Sova Command Called')
+    print('AGENT SOVA Command Called')
 
   elif agentName == 'Viper' or agentName == 'viper':
     agent_list.Viper()
     await ctx.send (embed=agent_list.Viper())
-    print('Agent Viper Command Called')
+    print('AGENT VIPER Command Called')
 
   else:
     agent_list.invalidMessage()
     await ctx.send(embed=agent_list.invalidMessage())
-    print('Invalid Agent Output Sent')
+    print('INVALID AGENT Output Sent')
 
 ################################################################################
 ################################################################################
@@ -302,7 +297,7 @@ async def weapons(ctx):
 
   embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual agent/character, please use \n**`v!wp <name>`** (aliases = **`v!weapon`**, **`v!gun`**) \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!wp classic`** or **`v!wp Classic`***', inline=False)
 
-  print('Weapon List Command Called')
+  print('WEAPON LIST Command Called')
   
   await ctx.send (embed=embed)
 
@@ -315,97 +310,97 @@ async def weapon(ctx, weaponName):
   if weaponName == 'Classic' or weaponName == 'classic':
     sideArms.Classic()
     await ctx.send(embed=sideArms.Classic())
-    print('Weapon Classic Command Called')
+    print('WEAPON CLASSIC Command Called')
 
   elif weaponName == 'Shorty' or weaponName == 'shorty':
     sideArms.Shorty()
     await ctx.send(embed=sideArms.Shorty())
-    print('Weapon Shorty Command Called')
+    print('WEAPON Shorty SHORTY Called')
 
   elif weaponName == 'Frenzy' or weaponName == 'frenzy':
     sideArms.Frenzy()
     await ctx.send(embed=sideArms.Frenzy())
-    print('Weapon Frenzy Command Called')
+    print('WEAPON FRENZY Command Called')
 
   elif weaponName == 'Ghost' or weaponName == 'ghost':
     sideArms.Ghost()
     await ctx.send(embed=sideArms.Ghost())
-    print('Weapon Ghost Command Called')
+    print('WEAPON GHOST Command Called')
   
   elif weaponName == 'Sheriff' or weaponName == 'sheriff':
     sideArms.Sheriff()
     await ctx.send(embed=sideArms.Sheriff())
-    print('Weapon Sheriff Command Called')
+    print('WEAPON SHERIFF Command Called')
 
   elif weaponName == 'Stinger' or weaponName == 'stinger':
     submachineGuns.Stinger()
     await ctx.send(embed=submachineGuns.Stinger())
-    print('Weapon Stinger Command Called')
+    print('WEAPON STINGER Command Called')
 
   elif weaponName == 'Spectre' or weaponName == 'spectre':
     submachineGuns.Spectre()
     await ctx.send(embed=submachineGuns.Spectre())
-    print('Weapon Spectre Command Called')
+    print('WEAPON SPECTRE Command Called')
 
   elif weaponName == 'Bulldog' or weaponName == 'bulldog':
     normalRifles.Bulldog()
     await ctx.send(embed=normalRifles.Bulldog())
-    print('Weapon Bulldog Command Called')
+    print('WEAPON BULLDOG Command Called')
   
   elif weaponName == 'Guardian' or weaponName == 'guardian':
     normalRifles.Guardian()
     await ctx.send(embed=normalRifles.Guardian())
-    print('Weapon Guardian Command Called')
+    print('WEAPON GUARDIAN Command Called')
 
   elif weaponName == 'Phantom' or weaponName == 'phantom':
     normalRifles.Phantom()
     await ctx.send(embed=normalRifles.Phantom())
-    print('Weapon Phantom Command Called')
+    print('WEAPON PHANTOM Command Called')
 
   elif weaponName == 'Vandal' or weaponName == 'vandal':
     normalRifles.Vandal()
     await ctx.send(embed=normalRifles.Vandal())
-    print('Weapon Vandal Command Called')
+    print('WEAPON VANDAL Command Called')
 
   elif weaponName == 'Bucky' or weaponName == 'bucky':
     shotguns.Bucky()
     await ctx.send(embed=shotguns.Bucky())
-    print('Bucky')
+    print('WEAPON BUCKY Command Called')
 
   elif weaponName == 'Judge' or weaponName == 'judge':
     shotguns.Judge()
     await ctx.send(embed=shotguns.Judge())
-    print('Weapon Judge Command Called')
+    print('WEAPON JUDGE Command Called')
 
   elif weaponName == 'Ares' or weaponName == 'ares':
     heavyRifles.Ares()
     await ctx.send(embed=heavyRifles.Ares())
-    print('Weapon Ares Command Called')
+    print('WEAPON ARES Command Called')
 
   elif weaponName == 'Odin' or weaponName == 'odin':
     heavyRifles.Odin()
     await ctx.send(embed=heavyRifles.Odin())
-    print('Weapon Odin Command Called')
+    print('WEAPON ODIN Command Called')
 
   elif weaponName == 'Marshal' or weaponName == 'marshal':
     sniperRifles.Marshal()
     await ctx.send(embed=sniperRifles.Marshal())
-    print('Weapon Marshal Command Called')
+    print('WEAPON MARSHAL Command Called')
 
   elif weaponName == 'Operator' or weaponName == 'operator':
     sniperRifles.Operator()
     await ctx.send(embed=sniperRifles.Operator())
-    print('Weapon Operator Command Called')
+    print('WEAPON OPERATOR Command Called')
 
   elif weaponName == 'Knife' or weaponName == 'knife':
     meleeCombat.Knife()
     await ctx.send(embed=meleeCombat.Knife())
-    print('Weapon Knife Command Called')
+    print('WEAPON KNIFE Command Called')
 
   else:
     invalidMessage.Invalid()
     await ctx.send(embed=invalidMessage.Invalid())
-    print('Invalid Weapon Output Sent')
+    print('INVALID WEAPON Output Sent')
 
 ################################################################################
 ################################################################################
@@ -434,7 +429,7 @@ async def maps(ctx):
 
   embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual map, please use \n**`v!map <name>`** \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
 
-  print('Map List Command Called')
+  print('MAP LIST Command Called')
   
   await ctx.send (embed=embed)
 
@@ -447,32 +442,32 @@ async def map(ctx, mapName):
   if mapName == 'Ascent' or mapName == 'ascent':
     map_list.Bind()
     await ctx.send (embed=map_list.Ascent())
-    print('Map Ascent Command Called')
+    print('MAP ASCENT Command Called')
 
   elif mapName == 'Bind' or mapName == 'bind':
     map_list.Bind()
     await ctx.send (embed=map_list.Bind())
-    print('Map Bind Command Called')
+    print('MAP BIND Command Called')
   
   elif mapName == 'Haven' or mapName == 'haven':
     map_list.Haven()
     await ctx.send (embed=map_list.Haven())
-    print('Map Haven Command Called')
+    print('MAP HAVEN Command Called')
 
   elif mapName == 'Split' or mapName == 'split':
     map_list.Split()
     await ctx.send (embed=map_list.Split())
-    print('Map Split Command Called')
+    print('MAP SPLIT Command Called')
 
   elif mapName == 'Range' or mapName == 'range':
     map_list.Range()
     await ctx.send (embed=map_list.Range())
-    print('Map Range Command Called')
+    print('MAP RANGE Command Called')
 
   else:
     map_list.invalidMessage()
     await ctx.send(embed=map_list.invalidMessage())
-    print('Invalid Map Output Sent')
+    print('INVALID MAP Output Sent')
 
 ################################################################################
 ################################################################################
@@ -495,7 +490,7 @@ async def ranks(ctx):
 
   embed.add_field(name='***Additional Info***', value='If your friends are 6 levels above or below yours, you will not be able to play with them until you gain rating to match theirs or they gain or lose rating to match yours. ', inline=False)
 
-  print('Ranks Command Called')
+  print('RANKS Command Called')
   await ctx.send (embed=embed)
 
 ################################################################################
@@ -525,7 +520,7 @@ async def modes(ctx):
 
   embed.add_field (name='-------------------------------------------------------------', value='*The bomb in the main planting/defusing game mode*')
 
-  print('Modes Command Called')
+  print('MODES Command Called')
   await ctx.send (embed=embed)
 
 ################################################################################
@@ -545,7 +540,7 @@ async def creds(ctx):
 
   embed.add_field(name='***Creds   <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1,000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
 
-  print('Creds Command Called')
+  print('CREDS Command Called')
   await ctx.send (embed=embed)
 
 ################################################################################
@@ -580,7 +575,7 @@ async def ping(ctx):
     #Bot Uptime
     embed.add_field(name='***:clock: Bot Uptime Duration***',value=(f'`{days}` day(s), `{hours}` hour(s), `{minutes}` min(s), and `{seconds}` second(s) \n\n*The bot\'s uptime is reset every time the bot restarts. This shows the uptime since the last restart*'),inline=False)
     
-    print('Ping Command Called')
+    print('PING Command Called')
     await ctx.send(embed=embed)
 
 ################################################################################
@@ -612,7 +607,7 @@ async def botinfo(ctx):
     
     embed.add_field(name='***Developement Information***',value='```Status Update (Week of 6/08/2020): \n\nWebsite has been released, click the link above for the official website and/or the Veloxis Support Discord Server \n\nPlayer tracking will be out once https://wwww.tracker.gg releases tracking with the Riot API \n\nThank you for your support and patience \n- Development Team```',inline=False)
     
-    print('BotInfo Command Called')
+    print('BOTINFO Command Called')
     await ctx.send(embed=embed)
 
 ################################################################################
