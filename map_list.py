@@ -7,7 +7,7 @@ def Ascent():
   mapName = 'Ascent'
   embed = discord.Embed(title=mapName+" (Map)", color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -15,7 +15,7 @@ def Ascent():
 
   embed.add_field(name='*Suburban Area*', value='Map supposedly situated in Venice, Italy, in a market zone or a public landmark', inline=False)
 
-  embed.set_image(url="https://i.imgur.com/MALtQgW.png")
+  embed.set_image(url="https://i.imgur.com/MALtQgW.png")c
 
   return embed
 
@@ -24,7 +24,7 @@ def Bind():
   mapName = 'Bind'
   embed = discord.Embed(title=mapName+" (Map)", color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -41,7 +41,7 @@ def Haven():
   mapName = 'Haven'
   embed = discord.Embed(title=mapName+" (Map)", color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -58,7 +58,7 @@ def Split():
   mapName = 'Split'
   embed = discord.Embed(title=mapName+" (Map)", color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -77,7 +77,7 @@ def Range():
   mapName = 'Range'
   embed = discord.Embed(title=mapName+" (Map)", color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
