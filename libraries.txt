@@ -2,4 +2,4 @@
 
 pip install discord.py
 pip install datetime
-pip install psutilcc
+pip install psutil
