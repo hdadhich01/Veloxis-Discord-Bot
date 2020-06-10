@@ -1,3 +1,5 @@
+# python packages required to run main.py that are installed in terminal/command prompt
+
 pip install discord.py
 pip install datetime
-pip install psutil
+pip install psutilcc
