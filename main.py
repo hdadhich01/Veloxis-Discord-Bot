@@ -4,9 +4,6 @@
 from discord.ext import commands #, menus #basic discord python library and API
 from datetime import datetime #date and time (for uptime)
 import discord #basic discord python library and API
-from threading import Thread
-from flask import Flask #used for keepalive() script
-import os
 import psutil #system logging and info (CPU/RAM Usage)
 
 #importing agent_list.py
@@ -27,28 +24,11 @@ sniperRifles = sniperRifles()
 meleeCombat = meleeCombat()
 invalidMessage = invalidMessage()
 
-#importing player_statistics.py (logic used for importing player statistics "v!stats")
+#import player_statistics.py (logic used for importing player statistics "v!stats")
 #import player_statistics
 
 ################################################################################
 ################################################################################
-
-#start of keepalive() script
-
-app = Flask('')
-
-@app.route('/')
-def home():
-    return "Veloxis is Online<br><br>Developers:<br>Vrushank Prakash<br>Harsh Dadhich<br>Deepak Ananthkrishnan<br><br>Use \"v!help\" for Help<br>Use \"v!botinfo\" for Bot Information"
-
-def run():
-  app.run(host='0.0.0.0',port=8080)
-
-def keep_alive():  
-  t = Thread(target=run)
-  t.start()
-    
-#end of keepalive() script
 
 client = commands.Bot(command_prefix = 'v!')
 
@@ -66,10 +46,8 @@ async def on_ready():
     #status2 = "Valorant Streams | v!help"
     #status3 = "Out For Patch Notes | v!help"
 
-    print(client.user.name+'\nBot is initialized and running on https://Valorant-Bot.hdadhich01.repl.co \nBot developed by Vrushank P, Harsh D, and Deepak A')
-
-    #OLD STATUS (DON'T REMOVE) # await client.change_presence(status=discord.Status.dnd, activity=discord.Game('VALORANT [v!help]'))
-
+    print('Veloxis Discord Bot \nDiscord Bot Up and Running on Harsh\'s Dell Laptop \nBot developed by Harsh Dadhich, Vrushank Prakash, Deepak Ananthkrishnan \n\n')
+    
     await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=(f"{len(client.guilds)} Servers [v!help]")))
 
     client.starttime = datetime.now()
@@ -81,24 +59,24 @@ async def on_ready():
 @client.command()
 async def help(ctx):
 
-  cur_page = 1
-  total_pages = 4
+  # cur_page = 1
+  # total_pages = 4
 
-  def on_forward(reaction, user):
-    return user == ctx.message.author and str(reaction.emoji) == '▶️'
+  # def on_forward(reaction, user):
+  #   return user == ctx.message.author and str(reaction.emoji) == '▶️'
   
-  def on_backward(reaction, user):
-    return user == ctx.message.author and str(reaction.emoji) == '◀️'
+  # def on_backward(reaction, user):
+  #   return user == ctx.message.author and str(reaction.emoji) == '◀️'
 
-  reaction1, user1 = await client.wait_for('reaction_add', check=on_forward)
+  # reaction1, user1 = await client.wait_for('reaction_add', check=on_forward)
 
-  reaction2, user2 = await client.wait_for('reaction_add', check=on_backward)
+  # reaction2, user2 = await client.wait_for('reaction_add', check=on_backward)
 
-  if on_forward(reaction1, user1):
-    cur_page += 1
+  # if on_forward(reaction1, user1):
+  #   cur_page += 1
 
-  elif on_backward(reaction2, user2):
-    cur_page -= 1
+  # elif on_backward(reaction2, user2):
+  #   cur_page -= 1
   
   help_section = ['***Display a Player\'s Statistics***', #0
                   '***Display ALL Agents***', #1
@@ -115,12 +93,12 @@ async def help(ctx):
 
   #Page 1
 
-  embed1 = discord.Embed(title=f'Help Section | Page `{cur_page}` / {total_pages}', color=0xFF004D)
+  # embed1 = discord.Embed(title=f'Help Section | Page `{cur_page}` / {total_pages}', color=0xFF004D)
 
-  await embed1.add_reaction('▶️')
-  await embed1.add_reaction('◀️')
+  # await embed1.add_reaction('▶️')
+  # await embed1.add_reaction('◀️')
 
-  embed1.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed1.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed1.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -137,31 +115,27 @@ async def help(ctx):
   await ctx.send (embed=embed1)
 
 
-  # #Page 2
-  # embed.add_field(name=help_section[3], value='**`v!weapons` (aliases = `v!wps`, `v!guns`)** \n • Weapon Class \n • Weapon **`listcode`**', inline=False)
+  #Page 2
+  embed.add_field(name=help_section[3], value='**`v!weapons` (aliases = `v!wps`, `v!guns`)** \n • Weapon Class \n • Weapon **`listcode`**', inline=False)
 
-  # embed.add_field(name=help_section[4], value='**`v!weapon <name>` (aliases = `v!wp`, `v!gun`)** \n • Weapon type \n • Recoil pattern \n • Primary and alternate firing settings \n • Damage output (based on head/body/legs) \n • Magazine capacity \n • Ability to pierce through walls', inline=False)
+  embed.add_field(name=help_section[4], value='**`v!weapon <name>` (aliases = `v!wp`, `v!gun`)** \n • Weapon type \n • Recoil pattern \n • Primary and alternate firing settings \n • Damage output (based on head/body/legs) \n • Magazine capacity \n • Ability to pierce through walls', inline=False)
 
-  #   #########################
+  #Page 3
+  embed.add_field(name=help_section[5], value='**`v!maps` (aliases = `v!mps`)**  \n • Haven (Map) \n • Bind (Map)\n • Split (Map) \n • Range (Training Map)', inline=False)
 
-  # #Page 3
-  # embed.add_field(name=help_section[5], value='**`v!maps` (aliases = `v!mps`)**  \n • Haven (Map) \n • Bind (Map)\n • Split (Map) \n • Range (Training Map)', inline=False)
+  embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)** \n • Map Setting/Origin/Environment \n • Map Image', inline=False)
 
-  # embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)** \n • Map Setting/Origin/Environment \n • Map Image', inline=False)
+  embed.add_field(name=help_section[7], value='**`v!ranks`** \n • Information on achieveing ranks \n • A picture with ALL the rank badges', inline=False)
 
-  # embed.add_field(name=help_section[7], value='**`v!ranks`** \n • Information on achieveing ranks \n • A picture with ALL the rank badges', inline=False)
+  #Page 4
+  embed.add_field(name=help_section[8], value='**`v!modes`** \n • Information on Unranked Matches \n • Information on Ranked Matches \n • Information on Practice Matches', inline=False)
 
-  #   #########################
+  embed.add_field(name=help_section[9], value='**`v!creds`** \n • Information on how credits are received for specific actions or events in the game', inline=False)
 
-  # #Page 4
-  # embed.add_field(name=help_section[8], value='**`v!modes`** \n • Information on Unranked Matches \n • Information on Ranked Matches \n • Information on Practice Matches', inline=False)
-
-  # embed.add_field(name=help_section[9], value='**`v!creds`** \n • Information on how credits are received for specific actions or events in the game', inline=False)
-
-  # embed.add_field(name=help_section[10], value='**Extra Commands and Information** \n • `v!help` → displays this help section \n • `v!ping` → displays latency, uptime, and   CPU/RAM usage \n • `v!botinfo` → displays information on this    bot, the invite link, Official Website, and Support Server Link \n\n*the names (of weapons, agents, maps, etc.) are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
+  embed.add_field(name=help_section[10], value='**Extra Commands and Information** \n • `v!help` → displays this help section \n • `v!ping` → displays latency, uptime, and   CPU/RAM usage \n • `v!botinfo` → displays information on this    bot, the invite link, Official Website, and Support Server Link \n\n*the names (of weapons, agents, maps, etc.) are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
     
-  # print('Help Command Called')
-  # await ctx.send(embed=embed)
+  print('Help Command Called')
+  await ctx.send(embed=embed)
 
 ################################################################################
 ################################################################################
@@ -172,7 +146,7 @@ async def stats(ctx):
   
   embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text='Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -193,7 +167,7 @@ async def agents(ctx):
 
     embed = discord.Embed(title='Valorant Agents', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
       
     embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -303,7 +277,7 @@ async def weapons(ctx):
 
   embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
@@ -439,7 +413,7 @@ async def maps(ctx):
 
   embed = discord.Embed(title='Valorant Maps', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
@@ -506,7 +480,7 @@ async def ranks(ctx):
   
   embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -530,7 +504,7 @@ async def modes(ctx):
 
   embed = discord.Embed (title='**Valorant Game Modes**', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -560,7 +534,7 @@ async def creds(ctx):
 
   embed = discord.Embed (title='**Valorant Creds Info**', color=0xFF004D)
 
-  embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -585,7 +559,7 @@ async def ping(ctx):
 
     embed = discord.Embed (title='🏓 Pong!', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
@@ -615,7 +589,7 @@ async def botinfo(ctx):
 
     embed=discord.Embed(title='Bot Information', color=0xFF004D)
 
-    embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
