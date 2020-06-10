@@ -6,13 +6,13 @@ from datetime import datetime #date and time (for uptime)
 import discord #basic discord python library and API
 import psutil #system logging and info (CPU/RAM Usage)
 
-#importing agent_list.py
+# importing agent_list.py
 import agent_list
 
-#importing  map_list.py
+# importing  map_list.py
 import map_list
 
-#importing weapon_list.py and the different classes of weapons
+# importing weapon_list.py and the different classes of weapons
 from weapon_list import sideArms, submachineGuns, normalRifles, shotguns, heavyRifles, sniperRifles, meleeCombat, invalidMessage
 
 sideArms = sideArms()
@@ -24,8 +24,8 @@ sniperRifles = sniperRifles()
 meleeCombat = meleeCombat()
 invalidMessage = invalidMessage()
 
-#import player_statistics.py (logic used for importing player statistics "v!stats")
-#import player_statistics
+# import player_statistics.py (logic used for importing player statistics "v!stats")
+# import player_statistics
 
 ################################################################################
 ################################################################################
@@ -37,7 +37,7 @@ client.remove_command('help')
 ################################################################################
 ################################################################################
 
-#bot on ready and intialized
+# bot on ready and intialized
 @client.event
 async def on_ready():
     
@@ -55,7 +55,7 @@ async def on_ready():
 ################################################################################
 ################################################################################
 
-#v!help
+# v!help
 @client.command()
 async def help(ctx):
 
@@ -91,7 +91,7 @@ async def help(ctx):
                   '***Other***' #10
                   ]
 
-  #Page 1
+  # Page 1
 
   # embed1 = discord.Embed(title=f'Help Section | Page `{cur_page}` / {total_pages}', color=0xFF004D)
 
@@ -115,19 +115,22 @@ async def help(ctx):
   await ctx.send (embed=embed1)
 
 
-  #Page 2
+  # Page 2
+
   embed.add_field(name=help_section[3], value='**`v!weapons` (aliases = `v!wps`, `v!guns`)** \n • Weapon Class \n • Weapon **`listcode`**', inline=False)
 
   embed.add_field(name=help_section[4], value='**`v!weapon <name>` (aliases = `v!wp`, `v!gun`)** \n • Weapon type \n • Recoil pattern \n • Primary and alternate firing settings \n • Damage output (based on head/body/legs) \n • Magazine capacity \n • Ability to pierce through walls', inline=False)
 
-  #Page 3
+  # Page 3
+
   embed.add_field(name=help_section[5], value='**`v!maps` (aliases = `v!mps`)**  \n • Haven (Map) \n • Bind (Map)\n • Split (Map) \n • Range (Training Map)', inline=False)
 
   embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)** \n • Map Setting/Origin/Environment \n • Map Image', inline=False)
 
   embed.add_field(name=help_section[7], value='**`v!ranks`** \n • Information on achieveing ranks \n • A picture with ALL the rank badges', inline=False)
 
-  #Page 4
+  # Page 4
+
   embed.add_field(name=help_section[8], value='**`v!modes`** \n • Information on Unranked Matches \n • Information on Ranked Matches \n • Information on Practice Matches', inline=False)
 
   embed.add_field(name=help_section[9], value='**`v!creds`** \n • Information on how credits are received for specific actions or events in the game', inline=False)
@@ -140,7 +143,7 @@ async def help(ctx):
 ################################################################################
 ################################################################################
 
-#v!stats <username#tagnumber>
+# v!stats <username#tagnumber>
 @client.command()
 async def stats(ctx):
   
@@ -161,7 +164,7 @@ async def stats(ctx):
 ################################################################################
 ################################################################################
 
-#v!agents/ags
+# v!agents/ags
 @client.command(aliases=['ags'])
 async def agents(ctx):
 
@@ -204,7 +207,7 @@ async def agents(ctx):
 
 #########################
 
-#v!agent/ag <name/listcode>
+# v!agent/ag <name/listcode>
 @client.command(aliases=['ag'])
 async def agent(ctx, agentName):
   
@@ -271,7 +274,7 @@ async def agent(ctx, agentName):
 ################################################################################
 ################################################################################
 
-#v!guns/wps/weapons
+# v!guns/wps/weapons
 @client.command(aliases=['wps','guns'])
 async def weapons(ctx):
 
@@ -305,7 +308,7 @@ async def weapons(ctx):
 
 #########################
 
-#v!weapon/wp/gun <name/listcode>
+# v!weapon/wp/gun <name/listcode>
 @client.command(aliases=['wp','gun'])
 async def weapon(ctx, weaponName):
 
@@ -407,7 +410,7 @@ async def weapon(ctx, weaponName):
 ################################################################################
 ################################################################################
 
-#v!maps
+# v!maps
 @client.command(aliases=['mps'])
 async def maps(ctx):
 
@@ -437,7 +440,7 @@ async def maps(ctx):
 
 #########################
 
-#v!map <map_name>
+# v!map <map_name>
 @client.command(aliases=['mp'])
 async def map(ctx, mapName):
   
@@ -474,7 +477,7 @@ async def map(ctx, mapName):
 ################################################################################
 ################################################################################
 
-#v!ranks
+# v!ranks
 @client.command()
 async def ranks(ctx):
   
@@ -498,7 +501,7 @@ async def ranks(ctx):
 ################################################################################
 ################################################################################
   
-#v!modes
+# v!modes
 @client.command()
 async def modes(ctx):
 
@@ -528,7 +531,7 @@ async def modes(ctx):
 ################################################################################
 ################################################################################
 
-#v!creds
+# v!creds
 @client.command()
 async def creds(ctx):
 
@@ -548,7 +551,7 @@ async def creds(ctx):
 ################################################################################
 ################################################################################
 
-#v!ping
+# v!ping
 @client.command()
 async def ping(ctx):
 
@@ -583,7 +586,7 @@ async def ping(ctx):
 ################################################################################
 ################################################################################
 
-#v!botinfo
+# v!botinfo
 @client.command()
 async def botinfo(ctx):
 
@@ -615,8 +618,7 @@ async def botinfo(ctx):
 ################################################################################
 ################################################################################
 
-#keepalive() script used (DO NOT REMOVE)
-keep_alive()
-client.run(os.environ.get('TOKEN'), bot=True, reconnect=True)
+infile = open('bot_token.txt', 'r')
+TOKEN = infile.readline()
 
-#if bot goes down, the bot will automatically come back online, unless if it was manually shutdown here, or a syntax error was encountered by manual mistake or restart
+client.run(TOKEN)
