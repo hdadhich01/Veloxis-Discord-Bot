@@ -195,7 +195,6 @@ async def agents(ctx):
 
     embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual agent, please use \n**`v!ag <name>`** (aliases = **`v!agent`**) \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!ag sova`** or **`v!ag Sova`***', inline=False)
 
-
     print('AGENT LIST Command Called')
     
     await ctx.send (embed=embed)
