@@ -15,7 +15,7 @@ def Ascent():
 
   embed.add_field(name='*Suburban Area*', value='Map supposedly situated in Venice, Italy, in a market zone or a public landmark', inline=False)
 
-  embed.set_image(url="https://i.imgur.com/MALtQgW.png")c
+  embed.set_image(url="https://i.imgur.com/MALtQgW.png")
 
   return embed
 
