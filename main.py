@@ -93,6 +93,8 @@ async def help(ctx):
   # await embed1.add_reaction('▶️')
   # await embed1.add_reaction('◀️')
 
+  embed = discord.Embed(title='Help Section', color=0xFF004D)
+
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
   embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
