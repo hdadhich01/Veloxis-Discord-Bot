@@ -93,19 +93,19 @@ async def help(ctx):
   # await embed1.add_reaction('▶️')
   # await embed1.add_reaction('◀️')
 
-  embed1.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed1.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-  embed1.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
+  embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed1.set_image(url="https://i.imgur.com/zjadlDH.png")
+  embed.set_image(url="https://i.imgur.com/zjadlDH.png")
   
-  embed1.add_field(name=help_section[0], value='**`v!stats <username#tag>`** \n[Coming Soon] Developers waiting on [tracker.gg](https://tracker.gg/valorant) to release player tracking using the Riot API', inline=False)
+  embed.add_field(name=help_section[0], value='**`v!stats <username#tag>`** \n[Coming Soon] Developers waiting on [tracker.gg](https://tracker.gg/valorant) to release player tracking using the Riot API', inline=False)
 
-  embed1.add_field(name=help_section[1], value='**`v!agents` (aliases = `v!ags`**) \nViews all the agents in a list alphabetically along with their origin and agent class, for more info on individual agents, and their abilities, use the command right below' , inline=False)
+  embed.add_field(name=help_section[1], value='**`v!agents` (aliases = `v!ags`**) \nViews all the agents in a list alphabetically along with their origin and agent class, for more info on individual agents, and their abilities, use the command right below' , inline=False)
 
-  embed1.add_field(name=help_section[2], value='**`v!agent <name>` (aliases = `v!ag`)** \n • Agent Origin \n • Agent Class \n • Agent Abilities', inline=False)
+  embed.add_field(name=help_section[2], value='**`v!agent <name>` (aliases = `v!ag`)** \n • Agent Origin \n • Agent Class \n • Agent Abilities', inline=False)
 
   # await ctx.send (embed=embed1)
 
