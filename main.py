@@ -596,7 +596,7 @@ async def botinfo(ctx):
 
     embed.add_field(name='***Bot Code Language***',value='Python 3.8.2',inline=True)
 
-    embed.add_field(name='***Hosting Service***',value='Running on Python Shell in a Dell Inspiron 15 Laptop',inline=True)
+    embed.add_field(name='***Hosting Service***',value='Running on <@410590963379994639>\'s Dell Inspiron 15 Laptop in Python Shell',inline=True)
 
     embed.add_field(name='***Developers***',value='<@533153734373539840> \n<@410590963379994639> \n<@652307034821361676>',inline=True)
 
