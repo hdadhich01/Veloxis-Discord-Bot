@@ -41,7 +41,7 @@ client.remove_command('help')
 @client.event
 async def on_ready():
 
-    print('================================================================================= \nDiscord Bot Name: Veloxis \nHosting Platform: Harsh\'s Dell Inspiron 15 Laptop (in Python Shell) \nBot Developers: Harsh Dadhich, Vrushank Prakash, and Deepak Ananthakrishnan \n================================================================================= \n\nBOT CONSOLE LOG BELOW: \n')
+    print("================================================================================= \nDiscord Bot Name: Veloxis \nHosting Platform: Harsh\'s Dell Inspiron 15 Laptop (in Python Shell) \nBot Developers: Harsh Dadhich, Vrushank Prakash, and Deepak Ananthakrishnan \n================================================================================= \n\nBOT CONSOLE LOG BELOW: \n")
     
     await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=(f"{len(client.guilds)} Servers [v!help]")))
 
