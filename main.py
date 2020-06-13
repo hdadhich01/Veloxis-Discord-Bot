@@ -502,7 +502,7 @@ async def creds(ctx):
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed.add_field(name='***Creds <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1,000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
+  embed.add_field(name='***Creds <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
 
   print('CREDS Command Called')
   await ctx.send (embed=embed)
