@@ -41,7 +41,7 @@ client.remove_command('help')
 @client.event
 async def on_ready():
 
-    print('Veloxis Discord Bot \nUp and Running on Harsh\'s Dell Inspiron 15 Laptop in Python Shell \nBot developed by Harsh Dadhich, Vrushank Prakash, Deepak Ananthakrishnan \n\n')
+    print('================================================================================= \nDiscord Bot Name: Veloxis \nHosting Platform: Harsh\'s Dell Inspiron 15 Laptop (in Python Shell) \nBot Developers: Harsh Dadhich, Vrushank Prakash, and Deepak Ananthakrishnan \n================================================================================= \n\nBOT CONSOLE LOG BELOW: \n')
     
     await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=(f"{len(client.guilds)} Servers [v!help]")))
 
@@ -53,45 +53,19 @@ async def on_ready():
 # v!help
 @client.command()
 async def help(ctx):
-
-  # cur_page = 1
-  # total_pages = 4
-
-  # def on_forward(reaction, user):
-  #   return user == ctx.message.author and str(reaction.emoji) == '▶️'
   
-  # def on_backward(reaction, user):
-  #   return user == ctx.message.author and str(reaction.emoji) == '◀️'
-
-  # reaction1, user1 = await client.wait_for('reaction_add', check=on_forward)
-
-  # reaction2, user2 = await client.wait_for('reaction_add', check=on_backward)
-
-  # if on_forward(reaction1, user1):
-  #   cur_page += 1
-
-  # elif on_backward(reaction2, user2):
-  #   cur_page -= 1
-  
-  help_section = ['***Display a Player\'s Statistics***', #0
-                  '***Display ALL Agents***', #1
-                  '***Displays an Agent\'s Profile***', #2
-                  '***Displays ALL Weapons***', #3
-                  '***Displays a Weapon/Gun\'s Info***', #4
-                  '***Displays ALL Maps***', #5
-                  '***Displays a Map\'s Info***', #6
-                  '***Displays ALL Ranks***', #7
-                  '***Displays ALL Game Modes***', #8
-                  '***Displays the Credit System***', #9
-                  '***Other***' #10
+  help_section = ['***:mag: Display a Player\'s Statistics***', #0
+                  '***:man_mage: Display ALL Agents***', #1
+                  '***:man_mage: Displays an Agent\'s Profile***', #2
+                  '***:dagger: Displays ALL Weapons***', #3
+                  '***:dagger: Displays a Weapon/Gun\'s Info***', #4
+                  '*** :bank: Displays ALL Maps***', #5
+                  '*** :bank: Displays a Map\'s Info***', #6
+                  '***:medal: Displays ALL Ranks***', #7
+                  '***:bow_and_arrow: Displays ALL Game Modes***', #8
+                  '***:moneybag: Displays the Credit System***', #9
+                  '***:man_detective: Extra Commands***' #10
                   ]
-
-  # Page 1
-
-  # embed1 = discord.Embed(title=f'Help Section | Page `{cur_page}` / {total_pages}', color=0xFF004D)
-
-  # await embed1.add_reaction('▶️')
-  # await embed1.add_reaction('◀️')
 
   embed = discord.Embed(title='Help Section', color=0xFF004D)
 
@@ -100,39 +74,30 @@ async def help(ctx):
   embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
-
-  embed.set_image(url="https://i.imgur.com/zjadlDH.png")
   
-  embed.add_field(name=help_section[0], value='**`v!stats <username#tag>`** \n[Coming Soon] Developers waiting on [tracker.gg](https://tracker.gg/valorant) to release player tracking using the Riot API', inline=False)
+  embed.add_field(name=help_section[0], value='**`v!stats <username#tag>`** [Coming Soon]', inline=False)
 
-  embed.add_field(name=help_section[1], value='**`v!agents` (aliases = `v!ags`**) \nViews all the agents in a list alphabetically along with their origin and agent class, for more info on individual agents, and their abilities, use the command right below' , inline=False)
+  embed.add_field(name=help_section[1], value='**`v!agents`** (aliases = **`v!ags`**)' , inline=False)
 
-  embed.add_field(name=help_section[2], value='**`v!agent <name>` (aliases = `v!ag`)** \n • Agent Origin \n • Agent Class \n • Agent Abilities', inline=False)
+  embed.add_field(name=help_section[2], value='**`v!agent <name>`** (aliases = **`v!ag`**)', inline=False)
 
-  # await ctx.send (embed=embed1)
+  embed.add_field(name=help_section[3], value='**`v!weapons`** (aliases = **`v!wps`**, **`v!guns`**)', inline=False)
 
-
-  # Page 2
-
-  embed.add_field(name=help_section[3], value='**`v!weapons` (aliases = `v!wps`, `v!guns`)** \n • Weapon Class \n • Weapon **`listcode`**', inline=False)
-
-  embed.add_field(name=help_section[4], value='**`v!weapon <name>` (aliases = `v!wp`, `v!gun`)** \n • Weapon type \n • Recoil pattern \n • Primary and alternate firing settings \n • Damage output (based on head/body/legs) \n • Magazine capacity \n • Ability to pierce through walls', inline=False)
+  embed.add_field(name=help_section[4], value='**`v!weapon <name>`** (aliases = **`v!wp`**, **`v!gun`**)', inline=False)
 
   # Page 3
 
-  embed.add_field(name=help_section[5], value='**`v!maps` (aliases = `v!mps`)**  \n • Haven (Map) \n • Bind (Map)\n • Split (Map) \n • Range (Training Map)', inline=False)
+  embed.add_field(name=help_section[5], value='**`v!maps`** (aliases = **`v!mps`**)', inline=False)
 
-  embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)** \n • Map Setting/Origin/Environment \n • Map Image', inline=False)
+  embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)**', inline=False)
 
-  embed.add_field(name=help_section[7], value='**`v!ranks`** \n • Information on achieveing ranks \n • A picture with ALL the rank badges', inline=False)
+  embed.add_field(name=help_section[7], value='**`v!ranks`**', inline=False)
 
-  # Page 4
+  embed.add_field(name=help_section[8], value='**`v!modes`**', inline=False)
 
-  embed.add_field(name=help_section[8], value='**`v!modes`** \n • Information on Unranked Matches \n • Information on Ranked Matches \n • Information on Practice Matches', inline=False)
+  embed.add_field(name=help_section[9], value='**`v!creds`**', inline=False)
 
-  embed.add_field(name=help_section[9], value='**`v!creds`** \n • Information on how credits are received for specific actions or events in the game', inline=False)
-
-  embed.add_field(name=help_section[10], value='**Extra Commands and Information** \n • `v!help` → displays this help section \n • `v!ping` → displays latency, uptime, and   CPU/RAM usage \n • `v!botinfo` → displays information on this    bot, the invite link, Official Website, and Support Server Link \n\n*the names (of weapons, agents, maps, etc.) are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
+  embed.add_field(name=help_section[10], value='• **`v!help`** → displays this help section \n • **`v!ping`** → displays latency, uptime, and CPU/RAM usage \n • **`v!botinfo`** → displays information on this bot, the invite link, Official Website, and Support Server Link', inline=False)
     
   print('HELP Command Called')
   await ctx.send(embed=embed)
@@ -195,7 +160,7 @@ async def agents(ctx):
 
     embed.add_field(name='***Viper***', value='Origin: :flag_us: United States\n Agent Class: <:controller_emoji:714940194566176958> Controller', inline=False)
 
-    embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual agent, please use \n**`v!ag <name>`** (aliases = **`v!agent`**) \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!ag sova`** or **`v!ag Sova`***', inline=False)
+    embed.add_field(name='***Individual Agent Card***', value='**`v!agent <name>`** (aliases = **`v!ag`**)', inline=False)
 
     print('AGENT LIST Command Called')
     
@@ -296,7 +261,7 @@ async def weapons(ctx):
 
   embed.add_field (name='***Melee***', value='• Knife', inline=False)
 
-  embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual agent/character, please use \n**`v!wp <name>`** (aliases = **`v!weapon`**, **`v!gun`**) \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!wp classic`** or **`v!wp Classic`***', inline=False)
+  embed.add_field(name='***Individual Weapon Card***', value='**`v!wp <name>`** (aliases = **`v!weapon`**, **`v!gun`**)', inline=False)
 
   print('WEAPON LIST Command Called')
   
@@ -428,7 +393,7 @@ async def maps(ctx):
 
   embed.add_field(name='***Range***', value='Training Map for Various Aspects of the Game', inline=False)
 
-  embed.add_field(name='***More Info***', value='To view detailed information on an \nindividual map, please use \n**`v!map <name>`** \n\n*the names are NOT CASE SENSITIVE so you can do either **`v!map haven`** or **`v!map Haven`***', inline=False)
+  embed.add_field(name='***Individual Map Card***', value='**`v!map <name>`** (aliases = **`v!mp`**)', inline=False)
 
   print('MAP LIST Command Called')
   
@@ -513,13 +478,11 @@ async def modes(ctx):
 
   embed.add_field (name='***Ranked Matches***', value='**Duration:** **`30`** to **`40`** **minutes** \n • Bomb (Spike Planting/Defusing) → Standard Mode', inline=False)
 
-  embed.add_field (name='***Unranked Matches***', value='***Duration:*** **`30`** to **`40`** ***minutes*** \n • Standard Mode → Bomb (Spike Planting/Defusing) \n\n ***Duration:*** **`8`** to **`12`** ***minutes*** \n • Spike Rush → Bomb (Spike Planting/Defusing) \n Includes various orb mechanics such as Speed Boost and Damage Boost', inline=False)
+  embed.add_field (name='***Unranked Matches***', value='***Duration:*** **`30`** to **`40`** ***minutes*** \n• Standard Mode → Bomb (Spike Planting/Defusing) \n\n***Duration:*** **`8`** to **`12`** ***minutes*** \n• Spike Rush → Bomb (Spike Planting/Defusing) \n Includes various orb mechanics such as Speed Boost and Damage Boost', inline=False)
 
-  embed.add_field (name='***Practice Matches***', value='• Open Range → Freely explore the entire range and all it has to offer \n\n • Shooting Test → Test your gun skills with a variety of shooting challenges \n\n • Spike Planting → Take control of the site, plant the Spike, and defend until detonation \n\n • Spike Defuse → Methodically defeat enemies and defuse the Spike before time runs out', inline=False)
+  embed.add_field (name='***Practice Matches***', value='• Open Range → Freely explore the entire range and all it has to offer \n\n• Shooting Test → Test your gun skills with a variety of shooting challenges \n\n• Spike Planting → Take control of the site, plant the Spike, and defend until detonation \n\n• Spike Defuse → Methodically defeat enemies and defuse the Spike before time runs out', inline=False)
 
-  embed.add_field (name='***Upcoming Game Modes***', value='• Team Deathmatch \n • Capture the Flag \n • Free for All', inline=False)
-
-  embed.add_field (name='-------------------------------------------------------------', value='*The bomb in the main planting/defusing game mode*')
+  embed.add_field (name='***Upcoming Game Modes***', value='• Team Deathmatch \n• Capture the Flag \n• Free for All', inline=False)
 
   print('MODES Command Called')
   await ctx.send (embed=embed)
@@ -539,7 +502,7 @@ async def creds(ctx):
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed.add_field(name='***Creds   <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1,000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
+  embed.add_field(name='***Creds <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1,000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
 
   print('CREDS Command Called')
   await ctx.send (embed=embed)
@@ -574,7 +537,7 @@ async def ping(ctx):
     embed.add_field(name='***<:ram_icon:715309388168167484> RAM Usage***',value=(f'`{round(psutil.virtual_memory()[2])}`%'),inline=True)
 
     #Bot Uptime
-    embed.add_field(name='***:clock: Bot Uptime Duration***',value=(f'`{days}` day(s), `{hours}` hour(s), `{minutes}` min(s), and `{seconds}` second(s) \n\n*The bot\'s uptime is reset every time the bot restarts. This shows the uptime since the last restart*'),inline=False)
+    embed.add_field(name='***:clock: Bot Uptime Duration***',value=(f'`{days}` day(s), `{hours}` hour(s), `{minutes}` min(s), and `{seconds}` second(s) \n\n*uptime displays the amount of time that has passed since the last update/restart to the application*'),inline=False)
     
     print('PING Command Called')
     await ctx.send(embed=embed)
@@ -606,7 +569,7 @@ async def botinfo(ctx):
 
     embed.add_field(name='***Veloxis Support Server***',value='Click [here](https://discord.com/invite/ppEpWEm) to join the OFFICIAL **`Veloxis Support Server`**',inline=False)
     
-    embed.add_field(name='***Developement Information***',value='```Status Update (Week of 6/08/2020): \n\nWebsite has been released, click the link above for the official website and/or the Veloxis Support Discord Server \n\nPlayer tracking will be out once https://wwww.tracker.gg releases tracking with the Riot API \n\nThank you for your support and patience \n- Development Team```',inline=False)
+    embed.add_field(name='***Developement Information***',value='```Status Update: \n\nWebsite has been released, click the link above for the official website and/or the Veloxis Support Discord Server \n\nPlayer tracking will be out once https://wwww.tracker.gg releases tracking with the Riot API \n\nThank you for your support and patience \n- Development Team```',inline=False)
     
     print('BOTINFO Command Called')
     await ctx.send(embed=embed)
