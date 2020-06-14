@@ -281,7 +281,7 @@ async def weapon(ctx, weaponName):
   elif weaponName == 'Shorty' or weaponName == 'shorty':
     sideArms.Shorty()
     await ctx.send(embed=sideArms.Shorty())
-    print('WEAPON Shorty SHORTY Called')
+    print('WEAPON SHORTY Called')
 
   elif weaponName == 'Frenzy' or weaponName == 'frenzy':
     sideArms.Frenzy()
