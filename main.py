@@ -127,7 +127,7 @@ async def stats(ctx):
 ################################################################################
 
 # v!agents/ags
-@client.command(aliases=['ags','Agents'])
+@client.command(aliases=['ags','Ags','Agents'])
 async def agents(ctx):
 
     embed = discord.Embed(title='Valorant Agents', color=0xFF004D)
@@ -169,7 +169,7 @@ async def agents(ctx):
 #########################
 
 # v!agent/ag <name/listcode>
-@client.command(aliases=['ag','Agent'])
+@client.command(aliases=['ag','Ag','Agent'])
 async def agent(ctx, agentName):
   
   if agentName == 'Breach' or agentName == 'breach':
@@ -236,7 +236,7 @@ async def agent(ctx, agentName):
 ################################################################################
 
 # v!guns/wps/weapons
-@client.command(aliases=['wps','guns','Weapons','Guns'])
+@client.command(aliases=['wps','Wps','guns','Guns','Weapons'])
 async def weapons(ctx):
 
   embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D)
@@ -270,7 +270,7 @@ async def weapons(ctx):
 #########################
 
 # v!weapon/wp/gun <name/listcode>
-@client.command(aliases=['wp','gun','Weapon','Gun'])
+@client.command(aliases=['wp','Wp','gun','Gun','Weapon'])
 async def weapon(ctx, weaponName):
 
   if weaponName == 'Classic' or weaponName == 'classic':
@@ -372,7 +372,7 @@ async def weapon(ctx, weaponName):
 ################################################################################
 
 # v!maps
-@client.command(aliases=['mps','Maps'])
+@client.command(aliases=['mps','Mps','Maps'])
 async def maps(ctx):
 
   embed = discord.Embed(title='Valorant Maps', color=0xFF004D)
@@ -402,7 +402,7 @@ async def maps(ctx):
 #########################
 
 # v!map <map_name>
-@client.command(aliases=['mp','Map'])
+@client.command(aliases=['mp','Mp','Map'])
 async def map(ctx, mapName):
   
   if mapName == 'Ascent' or mapName == 'ascent':
