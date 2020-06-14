@@ -51,7 +51,7 @@ async def on_ready():
 ################################################################################
 
 # v!help
-@client.command()
+@client.command(aliases=['Help'])
 async def help(ctx):
   
   help_section = ['***:mag: Display a Player\'s Statistics***', #0
@@ -106,7 +106,7 @@ async def help(ctx):
 ################################################################################
 
 # v!stats <username#tagnumber>
-@client.command()
+@client.command(aliases=['Stats'])
 async def stats(ctx):
   
   embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
@@ -127,7 +127,7 @@ async def stats(ctx):
 ################################################################################
 
 # v!agents/ags
-@client.command(aliases=['ags'])
+@client.command(aliases=['ags','Agents'])
 async def agents(ctx):
 
     embed = discord.Embed(title='Valorant Agents', color=0xFF004D)
@@ -169,7 +169,7 @@ async def agents(ctx):
 #########################
 
 # v!agent/ag <name/listcode>
-@client.command(aliases=['ag'])
+@client.command(aliases=['ag','Agent'])
 async def agent(ctx, agentName):
   
   if agentName == 'Breach' or agentName == 'breach':
@@ -236,7 +236,7 @@ async def agent(ctx, agentName):
 ################################################################################
 
 # v!guns/wps/weapons
-@client.command(aliases=['wps','guns'])
+@client.command(aliases=['wps','guns','Weapons','Guns'])
 async def weapons(ctx):
 
   embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D)
@@ -270,7 +270,7 @@ async def weapons(ctx):
 #########################
 
 # v!weapon/wp/gun <name/listcode>
-@client.command(aliases=['wp','gun'])
+@client.command(aliases=['wp','gun','Weapon','Gun'])
 async def weapon(ctx, weaponName):
 
   if weaponName == 'Classic' or weaponName == 'classic':
@@ -372,7 +372,7 @@ async def weapon(ctx, weaponName):
 ################################################################################
 
 # v!maps
-@client.command(aliases=['mps'])
+@client.command(aliases=['mps','Maps'])
 async def maps(ctx):
 
   embed = discord.Embed(title='Valorant Maps', color=0xFF004D)
@@ -402,7 +402,7 @@ async def maps(ctx):
 #########################
 
 # v!map <map_name>
-@client.command(aliases=['mp'])
+@client.command(aliases=['mp','Map'])
 async def map(ctx, mapName):
   
   if mapName == 'Ascent' or mapName == 'ascent':
@@ -439,7 +439,7 @@ async def map(ctx, mapName):
 ################################################################################
 
 # v!ranks
-@client.command()
+@client.command(aliases=['Ranks'])
 async def ranks(ctx):
   
   embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
@@ -463,7 +463,7 @@ async def ranks(ctx):
 ################################################################################
   
 # v!modes
-@client.command()
+@client.command(aliases=['Modes'])
 async def modes(ctx):
 
   embed = discord.Embed (title='**Valorant Game Modes**', color=0xFF004D)
@@ -491,7 +491,7 @@ async def modes(ctx):
 ################################################################################
 
 # v!creds
-@client.command()
+@client.command(aliases=['Creds'])
 async def creds(ctx):
 
   embed = discord.Embed (title='**Valorant Creds Info**', color=0xFF004D)
@@ -511,7 +511,7 @@ async def creds(ctx):
 ################################################################################
 
 # v!ping
-@client.command()
+@client.command(aliases=['Ping'])
 async def ping(ctx):
 
     time = datetime.now() - client.starttime
@@ -546,7 +546,7 @@ async def ping(ctx):
 ################################################################################
 
 # v!botinfo
-@client.command()
+@client.command(aliases=['Botinfo'])
 async def botinfo(ctx):
 
     embed=discord.Embed(title='Bot Information', color=0xFF004D)
