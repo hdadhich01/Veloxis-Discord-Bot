@@ -546,7 +546,7 @@ async def ping(ctx):
 ################################################################################
 
 # v!botinfo
-@client.command(aliases=['Botinfo'])
+@client.command(aliases=['Botinfo','vote','Vote','support','Support','invite','Invite'])
 async def botinfo(ctx):
 
     embed=discord.Embed(title='Bot Information', color=0xFF004D)
