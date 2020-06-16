@@ -568,9 +568,9 @@ async def botinfo(ctx):
     embed.add_field(name='***Bot Official Website***',value='Click [here](https://sites.google.com/view/veloxis) to view the website and full documentation of Veloxis',inline=False)
 
     embed.add_field(name='***Veloxis Support Server***',value='Click [here](https://discord.com/invite/ppEpWEm) to join the OFFICIAL **`Veloxis Support Server`**',inline=False)
-    
-    embed.add_field(name='***Developement Information***',value='```Status Update: \n\nWebsite has been released, click the link above for the official website and/or the Veloxis Support Discord Server \n\nPlayer tracking will be out once https://wwww.tracker.gg releases tracking with the Riot API \n\nThank you for your support and patience \n- Development Team```',inline=False)
-    
+
+    embed.add_field(name='***Veloxis Github Repository Server***',value='Click [here](https://github.com/hdadhich01/Veloxis-Discord-Bot) to view the **`Veloxis Github Repository`**',inline=False)
+
     print('BOTINFO Command Called')
     await ctx.send(embed=embed)
 
