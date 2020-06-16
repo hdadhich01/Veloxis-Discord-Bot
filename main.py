@@ -54,8 +54,8 @@ async def on_ready():
 @client.command(aliases=['Help'])
 async def help(ctx):
   
-  help_section = ['***:mag: Display a Player\'s Statistics***', #0
-                  '***:man_mage: Display ALL Agents***', #1
+  help_section = ['***:mag: Displays a Player\'s Statistics***', #0
+                  '***:man_mage: Displays ALL Agents***', #1
                   '***:man_mage: Displays an Agent\'s Profile***', #2
                   '***:dagger: Displays ALL Weapons***', #3
                   '***:dagger: Displays a Weapon/Gun\'s Info***', #4
@@ -75,7 +75,7 @@ async def help(ctx):
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
   
-  embed.add_field(name=help_section[0], value='**`v!stats <username#tag>`** [Coming Soon]', inline=False)
+  embed.add_field(name=help_section[0], value='**`v!stats <nick#tag>`** [Coming Soon]', inline=False)
 
   embed.add_field(name=help_section[1], value='**`v!agents`** (aliases = **`v!ags`**)' , inline=False)
 
@@ -105,7 +105,7 @@ async def help(ctx):
 ################################################################################
 ################################################################################
 
-# v!stats <username#tagnumber>
+# v!stats <nick#tag>
 @client.command(aliases=['Stats'])
 async def stats(ctx):
   
