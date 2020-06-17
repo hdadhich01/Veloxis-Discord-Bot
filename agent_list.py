@@ -355,7 +355,7 @@ def invalidMessage():
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is \n**`v!agent <name/listcode>`** (aliases = **`v!ag`**) \n\nTo get the names of all the agents, use \n**`v!agents`** (aliases = **`v!ags`**) \n\n*the names of agents are NOT CASE SENSITIVE so you can do either **`v!ag sova`** or **`v!ag Sova`***', inline=True)
+  embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is \n**`v!agent <name>`** (aliases = **`v!ag`**) \n\nTo get the names of all the agents, use \n**`v!agents`** (aliases = **`v!ags`**)', inline=True)
 
   return embed
 
