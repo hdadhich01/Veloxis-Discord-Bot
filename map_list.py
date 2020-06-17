@@ -97,6 +97,6 @@ def invalidMessage():
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is \n**`v!map <name/listcodee>`** (alias = **`v!mp`**)\n\nTo get the names of all the maps use \n**`v!maps`** (alias = **`v!mp`**) \n\n*the names of maps are NOT CASE SENSITIVE so you can do either **`v!mp haven`** or **`v!mp Haven`***', inline=True)
+  embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is \n**`v!map <name>`** (aliases = **`v!mp`**)\n\nTo get the names of all the maps use \n**`v!maps`** (alias = **`v!mp`**)', inline=True)
 
   return embed
