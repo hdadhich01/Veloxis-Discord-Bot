@@ -13,7 +13,6 @@ class sideArms:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/kVFYCxW.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -43,7 +42,6 @@ class sideArms:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/17R4jqm.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -74,7 +72,6 @@ class sideArms:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/JPVJuvU.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -104,7 +101,6 @@ class sideArms:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/jB44Uhr.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -133,7 +129,6 @@ class sideArms:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest?cb=20200404154438')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/wsZ7IdY.png")
 
@@ -163,8 +158,7 @@ class submachineGuns:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://i.imgur.com/tbjMXjZ.png')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/tbjMXjZ.png'
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -193,7 +187,6 @@ class submachineGuns:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/TpYAE93.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tbjMXjZ.png")
 
@@ -224,8 +217,7 @@ class normalRifles:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/0/07/Bulldog.png/revision/latest?cb=20200404171103')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/Dolo8O7.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/Dolo8O7.png")
 
@@ -251,8 +243,7 @@ class normalRifles:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/f/fd/Guardian.png/revision/latest?cb=20200404171224')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/U2icMfk.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/qXpDY6B.png")
 
@@ -278,8 +269,7 @@ class normalRifles:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/e/ec/Phantom.png/revision/latest?cb=20200404171302')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/8rRkRpR.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/8rRkRpR.png")
 
@@ -309,8 +299,7 @@ class normalRifles:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/5/56/Vandal.png/revision/latest?cb=20200404171348')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/DdBA3eP.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/DdBA3eP.png")
 
@@ -338,8 +327,7 @@ class shotguns:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/e/eb/Bucky.png/revision/latest?cb=20200404171832')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/tR74Xhq.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/tR74Xhq.png")
 
@@ -349,9 +337,9 @@ class shotguns:
 
     embed.add_field (name='***Wall Penetration***', value='Low', inline=True)
 
-    embed.add_field (name='***Primary Fire***', value='**Fire Mode:** Semi-Automatic \n **Fire Rate:** 1.1 rounds/sec', inline=False)
+    embed.add_field (name='***Primary Fire*** **`left-click`**', value='**Fire Mode:** Semi-Automatic \n **Fire Rate:** 1.1 rounds/sec', inline=False)
 
-    embed.add_field (name='***Alternate Fire***', value='**Fire Mode:** Semi-automatic Air Burst (extended Primary Fire  shot) \n **Fire Rate:** 1.1 rounds/sec', inline=False)
+    embed.add_field (name='***Alternate Fire*** **`right-click`**', value='**Fire Mode:** Semi-Automatic Air Burst (extended Primary Fire  shot) \n **Fire Rate:** 1.1 rounds/sec', inline=False)
 
     embed.add_field (name='***Damage \n(0-8M)***', value='**Head:** `44` \n **Body:** `22` \n **Leg:** `19`', inline=True)
 
@@ -369,8 +357,7 @@ class shotguns:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/8/8a/Judge.png/revision/latest?cb=20200404171858')
-    #change link for copyright
+    embed.set_image (url='https://i.imgur.com/dfrQO1Y.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/dfrQO1Y.png")
 
@@ -404,7 +391,6 @@ class heavyRifles:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/VHIo4bL.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -433,7 +419,6 @@ class heavyRifles:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/uuHubYM.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -464,7 +449,6 @@ class sniperRifles:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/8w09bjd.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -491,7 +475,6 @@ class sniperRifles:
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/Q49MgVm.png')
-    #change link for copyright
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -503,7 +486,7 @@ class sniperRifles:
 
     embed.add_field (name='***Primary Fire*** **`left-click`**', value='**Fire Mode:** Semi-Automatic \n **Fire Rate:** 0.75 rounds/sec \n `Left Click`', inline=False)
 
-    embed.add_field (name='***Alternate Fire*** **`right-click`**', value='**Fire Mode:** 2.5x/5x Zoom), Significant Spread Reduction \n **Fire Mode:** 0.75 rounds/sec')
+    embed.add_field (name='***Alternate Fire*** **`right-click`**', value='**Fire Mode:** 2.5x/5x Zoom), Significant Spread Reduction \n **Fire Mode:** 0.75 rounds/sec', inline=False)
 
     embed.add_field (name='***Damage \n(0-50M)***', value='**Head:** `255` \n **Body:** `150` \n **Leg:** `127`', inline=True)
 
@@ -513,14 +496,13 @@ class meleeCombat:
 
   def Knife(self):
     
-    embed = discord.Embed (title='** Melee Combat (Weapon Class) \nKnife (Weapon)**', color=0xFF004D)
+    embed = discord.Embed (title='**Melee Combat (Weapon Class) \nKnife (Weapon)**', color=0xFF004D)
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
     embed.set_image (url='https://i.imgur.com/k3ulxAu.png')
-    #change link for copyright
 
     embed.add_field (name='***<:credits_emoji:715298037957656587> Credits***', value='`NONE`', inline=True)
 
@@ -528,7 +510,7 @@ class meleeCombat:
 
     embed.add_field (name='***Wall Penetration***', value='N/A', inline=True)
 
-    embed.add_field (name='***Damage \n(Melee Distance)***',value='**Left-Click:** 50 \n**Right-Click:** 75',inline=True)
+    embed.add_field (name='***Damage \n(Melee Distance)***',value='**`Left-Click`:** 50 \n**`Right-Click`:** 75',inline=True)
 
     return embed
 
@@ -545,6 +527,6 @@ class invalidMessage:
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-    embed.add_field(name='***Use `v!help` for Info on All Commands***', value='The correct usage of this command is\n**`v!weapon <name/listcode>`** (aliases = **`v!wp`**, **`v!gun`**) \n\nTo get the names of all the weapons and weapon types, use \n**`v!weapons`** (aliases = **`v!wps`**, **`v!guns`**) \n\n*the names of weapons are NOT CASE SENSITIVE so you can do either **`v!wp classic`** or **`v!wp Classic`***', inline=True)
+    embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is\n**`v!weapon <name>`** (aliases = **`v!wp`**, **`v!gun`**) \n\nTo get the names of all the weapons and weapon types, use \n**`v!weapons`** (aliases = **`v!wps`**, **`v!guns`**)', inline=True)
 
     return embed
