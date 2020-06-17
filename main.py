@@ -557,13 +557,13 @@ async def botinfo(ctx):
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-    embed.add_field(name='***Bot Version***',value='**`Veloxis v1.1`**',inline=False)
+    embed.add_field(name='***Bot Version***',value='**`Veloxis v1.1`**',inline=True)
 
-    embed.add_field(name='***Code Language***',value='**`Python 3.8.2`**',inline=False)
-
-    embed.add_field(name='***Hosting Service***',value='Running on <@410590963379994639>\'s **`Dell Inspiron 15 Laptop`** in **`Python Shell`**',inline=True)
+    embed.add_field(name='***Code Language***',value='**`Python 3.8.2`**',inline=True)
 
     embed.add_field(name='***Developers***',value='<@533153734373539840> \n<@410590963379994639> \n<@652307034821361676>',inline=True)
+
+    embed.add_field(name='***Hosting Service***',value='Running on a **`Dell Inspiron 15 Laptop`** in **`Python Shell`**',inline=False)
 
     embed.add_field(name='***Veloxis Invite Link***',value='Click [here](https://discordapp.com/oauth2/authorize?client_id=710736437972172902&scope=bot&permissions=8) to invite this bot to another server',inline=False)
 
