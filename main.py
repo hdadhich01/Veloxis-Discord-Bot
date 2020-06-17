@@ -557,9 +557,9 @@ async def botinfo(ctx):
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-    embed.add_field(name='***Bot Version***',value='**`Veloxis v1.1`**',inline=True)
+    embed.add_field(name='***Bot Version***',value='**`Veloxis v1.1`**',inline=False)
 
-    embed.add_field(name='***Code Language***',value='**`Python 3.8.2`**',inline=True)
+    embed.add_field(name='***Code Language***',value='**`Python 3.8.2`**',inline=False)
 
     embed.add_field(name='***Hosting Service***',value='Running on <@410590963379994639>\'s **`Dell Inspiron 15 Laptop`** in **`Python Shell`**',inline=True)
 
@@ -567,7 +567,7 @@ async def botinfo(ctx):
 
     embed.add_field(name='***Veloxis Invite Link***',value='Click [here](https://discordapp.com/oauth2/authorize?client_id=710736437972172902&scope=bot&permissions=8) to invite this bot to another server',inline=False)
 
-    embed.add_field(name='***Veloxis Official Website***',value='Click [here](https://www.tinyurl.com/veloxis-discord-bot) to view the website and full documentation of Veloxis',inline=False)
+    embed.add_field(name='***Veloxis Official Website***',value='Click [here](https://www.tinyurl.com/veloxis-discord-bot) to view the OFFICIAL **`Veloxis Website`**',inline=False)
 
     embed.add_field(name='***Veloxis Support Server***',value='Click [here](https://discord.com/invite/ppEpWEm) to join the OFFICIAL **`Veloxis Support Server`**',inline=False)
 
