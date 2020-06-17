@@ -158,7 +158,7 @@ class submachineGuns:
     
     embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
-    embed.set_image (url='https://i.imgur.com/tbjMXjZ.png'
+    embed.set_image (url='https://i.imgur.com/tbjMXjZ.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
