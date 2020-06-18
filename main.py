@@ -43,7 +43,7 @@ async def on_ready():
 
     print("================================================================================= \nDiscord Bot Name: Veloxis \nHosting Platform: Harsh\'s Dell Inspiron 15 Laptop (in Python Shell) \nBot Developers: Harsh Dadhich, Vrushank Prakash, and Deepak Ananthakrishnan \n================================================================================= \n\nBOT CONSOLE LOG BELOW: \n")
     
-    await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=(f"{len(client.guilds)} Servers [v!help]")))
+    await client.change_presence(status=discord.Status.dnd, activity=discord.Activity(type=discord.ActivityType.watching, name=(f'{len(client.guilds)} Servers [v!help]')))
 
     client.starttime = datetime.now()
 
@@ -571,7 +571,7 @@ async def botinfo(ctx):
 
     embed.add_field(name='***Veloxis Github Repository***',value='Click [here](https://github.com/hdadhich01/Veloxis-Discord-Bot) to view the **`Veloxis Github Repository`**',inline=False)
 
-    embed.add_field(name='***Veloxis Server Presence***',value=(f"**`Veloxis`** is in **`{len(client.guilds)}`** Servers"),inline=False)
+    embed.add_field(name='***Veloxis Server Presence***',value=(f'**`Veloxis`** is in **`{len(client.guilds)}`** Servers'),inline=False)
 
     print('BOTINFO Command Called')
     await ctx.send(embed=embed)
