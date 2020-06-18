@@ -573,6 +573,8 @@ async def botinfo(ctx):
 
     embed.add_field(name='***Veloxis Github Repository***',value='Click [here](https://github.com/hdadhich01/Veloxis-Discord-Bot) to view the **`Veloxis Github Repository`**',inline=False)
 
+    embed.add_field(name='***Veloxis Server Presence***',value=(f"**`Veloxis`** is in **`{len(client.guilds)}`** Servers"),inline=False)
+
     print('BOTINFO Command Called')
     await ctx.send(embed=embed)
 
