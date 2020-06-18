@@ -85,8 +85,6 @@ async def help(ctx):
 
   embed.add_field(name=help_section[4], value='**`v!weapon <name>`** (aliases = **`v!wp`**, **`v!gun`**)', inline=False)
 
-  # Page 3
-
   embed.add_field(name=help_section[5], value='**`v!maps`** (aliases = **`v!mps`**)', inline=False)
 
   embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)**', inline=False)
