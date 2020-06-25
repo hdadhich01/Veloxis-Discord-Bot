@@ -1,6 +1,7 @@
 # this file is used for importing information in main.py on all the valorant weapons
 
 import discord
+from discord.ext import commands
 
 class sideArms:
   
@@ -10,7 +11,7 @@ class sideArms:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/kVFYCxW.png')
 
@@ -39,7 +40,7 @@ class sideArms:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/17R4jqm.png')
 
@@ -69,7 +70,7 @@ class sideArms:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/JPVJuvU.png')
 
@@ -98,7 +99,7 @@ class sideArms:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/jB44Uhr.png')
 
@@ -126,7 +127,7 @@ class sideArms:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://vignette.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png/revision/latest?cb=20200404154438')
 
@@ -156,7 +157,7 @@ class submachineGuns:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/tbjMXjZ.png')
 
@@ -184,7 +185,7 @@ class submachineGuns:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/TpYAE93.png')
 
@@ -215,7 +216,7 @@ class normalRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/Dolo8O7.png')
 
@@ -241,7 +242,7 @@ class normalRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/U2icMfk.png')
 
@@ -267,7 +268,7 @@ class normalRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/8rRkRpR.png')
 
@@ -297,7 +298,7 @@ class normalRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/DdBA3eP.png')
 
@@ -325,7 +326,7 @@ class shotguns:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/tR74Xhq.png')
 
@@ -355,7 +356,7 @@ class shotguns:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/dfrQO1Y.png')
 
@@ -388,7 +389,7 @@ class heavyRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/VHIo4bL.png')
 
@@ -416,7 +417,7 @@ class heavyRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/uuHubYM.png')
 
@@ -446,7 +447,7 @@ class sniperRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/8w09bjd.png')
 
@@ -472,7 +473,7 @@ class sniperRifles:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/Q49MgVm.png')
 
@@ -500,7 +501,7 @@ class meleeCombat:
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_image (url='https://i.imgur.com/k3ulxAu.png')
 
@@ -519,11 +520,11 @@ class invalidMessage:
   
   def Invalid(self):
   
-    embed = discord.Embed(title="Invalid Command Usage", color=0xFF0000)
+    embed = discord.Embed(title="Invalid Command Usage", color=0xFF004D)
     
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
       
-    embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
