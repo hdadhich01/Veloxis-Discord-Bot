@@ -67,11 +67,11 @@ async def help(ctx):
                   '***:man_detective: Extra Commands***' #10
                   ]
 
-  embed = discord.Embed(title='Help Section', color=0xFF004D)
+  embed = discord.Embed(title='Help Section', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
-    
-  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
+
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
   
@@ -107,11 +107,11 @@ async def help(ctx):
 @client.command(aliases=['Stats'])
 async def stats(ctx):
   
-  embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
+  embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text='Help Section → v!help | Bot Info → v!botinfo', icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -128,11 +128,11 @@ async def stats(ctx):
 @client.command(aliases=['ags','Ags','Agents'])
 async def agents(ctx):
 
-    embed = discord.Embed(title='Valorant Agents', color=0xFF004D)
+    embed = discord.Embed(title='Valorant Agents', color=0xFF004D, timestamp=ctx.message.created_at)
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
       
-    embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -237,13 +237,13 @@ async def agent(ctx, agentName):
 @client.command(aliases=['wps','Wps','guns','Guns','Weapons'])
 async def weapons(ctx):
 
-  embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D)
+  embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
-  embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.add_field (name='***Side Arms***', value='• Classic\n • Shorty \n • Frenzy \n • Ghost \n • Sheriff', inline=False)
 
@@ -373,13 +373,13 @@ async def weapon(ctx, weaponName):
 @client.command(aliases=['mps','Mps','Maps'])
 async def maps(ctx):
 
-  embed = discord.Embed(title='Valorant Maps', color=0xFF004D)
+  embed = discord.Embed(title='Valorant Maps', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
-  embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.add_field(name='***Ascent***', value='Map with Teleportation', inline=False)
 
@@ -440,11 +440,11 @@ async def map(ctx, mapName):
 @client.command(aliases=['Ranks'])
 async def ranks(ctx):
   
-  embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D)
+  embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -464,11 +464,11 @@ async def ranks(ctx):
 @client.command(aliases=['Modes'])
 async def modes(ctx):
 
-  embed = discord.Embed (title='**Valorant Game Modes**', color=0xFF004D)
+  embed = discord.Embed (title='**Valorant Game Modes**', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -492,11 +492,11 @@ async def modes(ctx):
 @client.command(aliases=['Creds'])
 async def creds(ctx):
 
-  embed = discord.Embed (title='**Valorant Creds Info**', color=0xFF004D)
+  embed = discord.Embed (title='**Valorant Creds Info**', color=0xFF004D, timestamp=ctx.message.created_at)
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -517,11 +517,11 @@ async def ping(ctx):
     hours, remainder = divmod(time.seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
 
-    embed = discord.Embed (title='🏓 Pong!', color=0xFF004D)
+    embed = discord.Embed (title='🏓 Pong!', color=0xFF004D, timestamp=ctx.message.created_at)
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -547,11 +547,11 @@ async def ping(ctx):
 @client.command(aliases=['Botinfo','vote','Vote','support','Support','invite','Invite'])
 async def botinfo(ctx):
 
-    embed=discord.Embed(title='Bot Information', color=0xFF004D)
+    embed=discord.Embed(title='Bot Information', color=0xFF004D, timestamp=ctx.message.created_at)
 
     embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-    embed.set_footer(text="Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
