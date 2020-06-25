@@ -229,6 +229,7 @@ def Raze():
   return embed
 
 def Reyna():
+  
   agentName = 'Reyna'
 
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
