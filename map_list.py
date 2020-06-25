@@ -9,7 +9,7 @@ def Ascent():
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -26,7 +26,7 @@ def Bind():
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -43,7 +43,7 @@ def Haven():
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -60,7 +60,7 @@ def Split():
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -79,7 +79,7 @@ def Range():
 
   embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -93,7 +93,7 @@ def invalidMessage():
   
   embed = discord.Embed(title="Invalid Command Usage", color=0xFF0000)
   
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
