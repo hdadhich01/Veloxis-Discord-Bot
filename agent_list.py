@@ -5,11 +5,12 @@ import discord
 def Breach():
     
   agentName = 'Breach'
+  
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
 
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -37,11 +38,12 @@ def Breach():
 def Brimstone():
 
   agentName = 'Brimstone'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
 
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
   
@@ -68,11 +70,12 @@ def Brimstone():
 def Cypher():
 
   agentName = 'Cypher'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
 
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -99,11 +102,12 @@ def Cypher():
 def Jett():
 
   agentName = 'Jett'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
 
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -131,11 +135,12 @@ def Jett():
 def Omen():
   
   agentName = 'Omen'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -162,11 +167,12 @@ def Omen():
 def Phoenix():
   
   agentName = 'Phoenix'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -193,11 +199,12 @@ def Phoenix():
 def Raze():
   
   agentName = 'Raze'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -223,11 +230,12 @@ def Raze():
 
 def Reyna():
   agentName = 'Reyna'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -254,11 +262,12 @@ def Reyna():
 def Sage():
   
   agentName = 'Sage'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -285,11 +294,12 @@ def Sage():
 def Sova():
   
   agentName = 'Sova'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -317,11 +327,12 @@ def Sova():
 def Viper():
   
   agentName = 'Viper'
+
   embed = discord.Embed(title=agentName + " (Agent)", color=0xFF004D)
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
@@ -351,11 +362,10 @@ def invalidMessage():
   
   embed.set_author(name="Veloxis", url="https://Valorant-Bot.hdadhich01.repl.co", icon_url="https://i.imgur.com/ZRH9UF4.png")
     
-  embed.set_footer(text="Veloxis | Help Section → v!help | Bot Info → v!botinfo", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_footer(text = 'Veloxis | Help Section → v!help | Bot Info → v!botinfo', icon_url='https://i.imgur.com/ZRH9UF4.png')
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
   embed.add_field(name='***Use*** **`v!help`** ***for Info on All Commands***', value='The correct usage of this command is \n**`v!agent <name>`** (aliases = **`v!ag`**) \n\nTo get the names of all the agents, use \n**`v!agents`** (aliases = **`v!ags`**)', inline=True)
 
   return embed
-
