@@ -6,13 +6,8 @@ from datetime import datetime #date and time (for uptime)
 import discord #basic discord python library and API
 import psutil #system logging and info (CPU/RAM Usage)
 
-# importing agent_list.py
 import agent_list
-
-# importing  map_list.py
 import map_list
-
-# importing weapon_list.py and the different classes of weapons
 from weapon_list import sideArms, submachineGuns, normalRifles, shotguns, heavyRifles, sniperRifles, meleeCombat, invalidMessage
 
 sideArms = sideArms()
@@ -23,9 +18,6 @@ heavyRifles = heavyRifles()
 sniperRifles = sniperRifles()
 meleeCombat = meleeCombat()
 invalidMessage = invalidMessage()
-
-# import player_statistics.py (logic used for importing player statistics "v!stats")
-# import player_statistics
 
 ################################################################################
 ################################################################################
@@ -54,48 +46,48 @@ async def on_ready():
 @client.command(aliases=['Help'])
 async def help(ctx):
   
-  help_section = ['***:mag: Displays a Player\'s Statistics***', #0
-                  '***:man_mage: Displays ALL Agents***', #1
-                  '***:man_mage: Displays an Agent\'s Profile***', #2
-                  '***:dagger: Displays ALL Weapons***', #3
-                  '***:dagger: Displays a Weapon/Gun\'s Info***', #4
-                  '*** :bank: Displays ALL Maps***', #5
-                  '*** :bank: Displays a Map\'s Info***', #6
-                  '***:medal: Displays ALL Ranks***', #7
-                  '***:bow_and_arrow: Displays ALL Game Modes***', #8
-                  '***:moneybag: Displays the Credit System***', #9
-                  '***:man_detective: Extra Commands***' #10
+  help_section = [':mag: Displays a Player\'s Statistics', #0
+                  ':man_mage: Displays ALL Agents', #1
+                  ':man_mage: Displays an Agent\'s Profile', #2
+                  ':gun: Displays ALL Weapons', #3
+                  ':gun: Displays a Weapon/Gun\'s Info', #4
+                  ':bank: Displays ALL Maps', #5
+                  ':bank: Displays a Map\'s Info', #6
+                  ':medal: Displays ALL Ranks', #7
+                  ':bow_and_arrow: Displays ALL Game Modes', #8
+                  ':moneybag: Displays the Credit System', #9
+                  ':man_detective: Extra Commands' #10
                   ]
 
   embed = discord.Embed(title='Help Section', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
 
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
   
-  embed.add_field(name=help_section[0], value='**`v!stats <nick#tag>`** [Coming Soon]', inline=False)
+  embed.add_field(name=help_section[0], value='`v!stats <nick#tag>` [Coming Soon]', inline=False)
 
-  embed.add_field(name=help_section[1], value='**`v!agents`** (aliases = **`v!ags`**)' , inline=False)
+  embed.add_field(name=help_section[1], value='`v!agents` (aliases = `v!ags`)' , inline=False)
 
-  embed.add_field(name=help_section[2], value='**`v!agent <name>`** (aliases = **`v!ag`**)', inline=False)
+  embed.add_field(name=help_section[2], value='`v!agent <name>` (aliases = `v!ag`)', inline=False)
 
-  embed.add_field(name=help_section[3], value='**`v!weapons`** (aliases = **`v!wps`**, **`v!guns`**)', inline=False)
+  embed.add_field(name=help_section[3], value='`v!weapons` (aliases = `v!wps`, `v!guns`)', inline=False)
 
-  embed.add_field(name=help_section[4], value='**`v!weapon <name>`** (aliases = **`v!wp`**, **`v!gun`**)', inline=False)
+  embed.add_field(name=help_section[4], value='`v!weapon <name>` (aliases = `v!wp`, `v!gun`)', inline=False)
 
-  embed.add_field(name=help_section[5], value='**`v!maps`** (aliases = **`v!mps`**)', inline=False)
+  embed.add_field(name=help_section[5], value='`v!maps` (aliases = `v!mps`)', inline=False)
 
-  embed.add_field(name=help_section[6], value='**`v!map <name>` (aliases = `v!mp`)**', inline=False)
+  embed.add_field(name=help_section[6], value='`v!map <name>` (aliases = `v!mp`)', inline=False)
 
-  embed.add_field(name=help_section[7], value='**`v!ranks`**', inline=False)
+  embed.add_field(name=help_section[7], value='`v!ranks`', inline=False)
 
-  embed.add_field(name=help_section[8], value='**`v!modes`**', inline=False)
+  embed.add_field(name=help_section[8], value='`v!modes`', inline=False)
 
   embed.add_field(name=help_section[9], value='**`v!creds`**', inline=False)
 
-  embed.add_field(name=help_section[10], value='• **`v!help`** → displays this help section \n • **`v!ping`** → displays latency, uptime, and CPU/RAM usage \n • **`v!botinfo`** → displays information on this bot, the invite link, Official Website, and Support Server Link', inline=False)
+  embed.add_field(name=help_section[10], value='• `v!help` → displays this help section \n`v!ping` → bot latency, uptime, stats \n • `v!botinfo` → website, support server, invite link, etc', inline=False)
     
   print('HELP Command Called')
   await ctx.send(embed=embed)
@@ -109,7 +101,7 @@ async def stats(ctx):
   
   embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
@@ -130,35 +122,35 @@ async def agents(ctx):
 
     embed = discord.Embed(title='Valorant Agents', color=0xFF004D, timestamp=ctx.message.created_at)
 
-    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
       
     embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-    embed.add_field(name='***Breach***', value='Origin: :flag_se: Sweden\n Agent Class: <:initiator_emoji:714939457589215274> Initiator', inline=False)
+    embed.add_field(name='Breach', value='**Origin:** :flag_se: `Sweden`\n **Agent Class:** <:initiator_emoji:714939457589215274> `Initiator`', inline=False)
 
-    embed.add_field(name='***Brimstone***', value='Origin: :flag_us: United States\n Agent Class: <:controller_emoji:714940194566176958> Controller', inline=False)
+    embed.add_field(name='Brimstone', value='**Origin:** :flag_us: `United States`\n **Agent Class:** <:controller_emoji:714940194566176958> `Controller`', inline=False)
 
-    embed.add_field(name='***Cypher***', value='Origin: :flag_ma: Morocco\n Agent Class: <:sentinel_emoji:714940115239305327> Sentinel', inline=False)
+    embed.add_field(name='Cypher', value='**Origin:** :flag_ma: `Morocco`\n **Agent Class:** <:sentinel_emoji:714940115239305327> `Sentinel`', inline=False)
 
-    embed.add_field(name='***Jett***', value='Origin: :flag_kr: South Korea\n Agent Class: <:duelist_emoji:714940079331737701> Duelist', inline=False)
+    embed.add_field(name='Jett', value='**Origin:** :flag_kr: `South Korea`\n **Agent Class:** <:duelist_emoji:714940079331737701> `Duelist`', inline=False)
 
-    embed.add_field(name='***Omen***', value='Origin: :question: Unknown\n Agent Class: <:controller_emoji:714940194566176958> Controller', inline=False)
+    embed.add_field(name='Omen', value='**Origin:** :question: `Unknown`\n **Agent Class:** <:controller_emoji:714940194566176958> `Controller`', inline=False)
 
-    embed.add_field(name='***Phoenix***', value='Origin: :flag_gb: United Kingdom\n Agent Class: <:duelist_emoji:714940079331737701> Duelist', inline=False)
+    embed.add_field(name='Phoenix', value='**Origin:** :flag_gb: `United Kingdom`\n **Agent Class:** <:duelist_emoji:714940079331737701> `Duelist`', inline=False)
 
-    embed.add_field(name='***Raze***', value='Origin: :flag_br: Brazil\n Agent Class: <:duelist_emoji:714940079331737701> Duelist', inline=False)
+    embed.add_field(name='Raze', value='**Origin:** :flag_br: `Brazil`\n **Agent Class:** <:duelist_emoji:714940079331737701> `Duelist`', inline=False)
 
-    embed.add_field(name='***Reyna***', value='Origin: :flag_it: Mexico\n Agent Class: <:duelist_emoji:714940079331737701> Duelist', inline=False)
+    embed.add_field(name='Reyna', value='**Origin:** :flag_it: `Mexico`\n **Agent Class:** <:duelist_emoji:714940079331737701> `Duelist`', inline=False)
 
-    embed.add_field(name='***Sage***', value='Origin: :flag_cn: China\n Agent Class: <:sentinel_emoji:714940115239305327> Sentinel', inline=False)
+    embed.add_field(name='Sage', value='**Origin:** :flag_cn: `China`\n **Agent Class:** <:sentinel_emoji:714940115239305327> `Sentinel`', inline=False)
 
-    embed.add_field(name='***Sova***', value='Origin: :flag_ru: Russia\n Agent Class: <:initiator_emoji:714939457589215274> Initiator', inline=False)
+    embed.add_field(name='Sova', value='**Origin:** :flag_ru: `Russia`\n **Agent Class:** <:initiator_emoji:714939457589215274> `Initiator', inline=False)
 
-    embed.add_field(name='***Viper***', value='Origin: :flag_us: United States\n Agent Class: <:controller_emoji:714940194566176958> Controller', inline=False)
+    embed.add_field(name='Viper', value='**Origin:** :flag_us: `United States`\n **Agent Class:** <:controller_emoji:714940194566176958> `Controller`', inline=False)
 
-    embed.add_field(name='***Individual Agent Card***', value='**`v!agent <name>`** (aliases = **`v!ag`**)', inline=False)
+    embed.add_field(name='View an Agent\'s Profile', value='`v!agent <name>` (aliases = `v!ag`)', inline=False)
 
     print('AGENT LIST Command Called')
     
@@ -239,27 +231,27 @@ async def weapons(ctx):
 
   embed = discord.Embed(title='Valorant Weapons/Guns', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
-  embed.add_field (name='***Side Arms***', value='• Classic\n • Shorty \n • Frenzy \n • Ghost \n • Sheriff', inline=False)
+  embed.add_field (name='Side Arms', value='• Classic\n • Shorty \n • Frenzy \n • Ghost \n • Sheriff', inline=False)
 
-  embed.add_field (name='***Submachine Guns***', value='• Stinger \n • Spectre ', inline=False)
+  embed.add_field (name='Submachine Guns', value='• Stinger \n • Spectre ', inline=False)
 
-  embed.add_field (name='***Normal Rifles***', value='• Bulldog \n • Guardian \n • Phantom \n • Vandal', inline=False)
+  embed.add_field (name='Normal Rifles', value='• Bulldog \n • Guardian \n • Phantom \n • Vandal', inline=False)
 
-  embed.add_field (name='***Shotguns***', value='• Bucky \n • Judge', inline=False)
+  embed.add_field (name='Shotguns', value='• Bucky \n • Judge', inline=False)
 
-  embed.add_field (name='***Heavy Rifles***', value='• Ares \n • Odin', inline=False)
+  embed.add_field (name='Heavy Rifles', value='• Ares \n • Odin', inline=False)
 
-  embed.add_field (name='***Sniper Rifles***', value='• Marshal \n • Operator', inline=False)
+  embed.add_field (name='Sniper Rifles', value='• Marshal \n • Operator', inline=False)
 
-  embed.add_field (name='***Melee***', value='• Knife', inline=False)
+  embed.add_field (name='Melee', value='• Knife', inline=False)
 
-  embed.add_field(name='***Individual Weapon Card***', value='**`v!wp <name>`** (aliases = **`v!weapon`**, **`v!gun`**)', inline=False)
+  embed.add_field(name='View a Weapon\'s Profile', value='**`v!wp <name>`** (aliases = **`v!weapon`**, **`v!gun`**)', inline=False)
 
   print('WEAPON LIST Command Called')
   
@@ -375,23 +367,23 @@ async def maps(ctx):
 
   embed = discord.Embed(title='Valorant Maps', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
-  embed.add_field(name='***Ascent***', value='Map with Teleportation', inline=False)
+  embed.add_field(name='Ascent', value='Recently added urban-themed map', inline=False)
 
-  embed.add_field(name='***Bind***', value='Map with Teleportation', inline=False)
+  embed.add_field(name='Bind', value='Sandy map with teleportation portals', inline=False)
 
-  embed.add_field(name='***Haven***', value='Southeast/South Asian Themed Map', inline=False)
+  embed.add_field(name='Haven', value='Map based on southeast or south asian architecture', inline=False)
 
-  embed.add_field(name='***Split***', value='Urban Area Themed Map', inline=False)
+  embed.add_field(name='Split', value='Another urban-themed map with the yellow ropes', inline=False)
 
-  embed.add_field(name='***Range***', value='Training Map for Various Aspects of the Game', inline=False)
+  embed.add_field(name='Range', value='The training map for practicing different modes, abilities, and weapons', inline=False)
 
-  embed.add_field(name='***Individual Map Card***', value='**`v!map <name>`** (aliases = **`v!mp`**)', inline=False)
+  embed.add_field(name='View a Map\'s Profile', value='`v!map <name>` (aliases = `v!mp`)', inline=False)
 
   print('MAP LIST Command Called')
   
@@ -400,7 +392,7 @@ async def maps(ctx):
 #########################
 
 # v!map <map_name>
-@client.command(aliases=['mp','Mp','Map'])
+@client.command(aliases=['Map','mp','Mp'])
 async def map(ctx, mapName):
   
   if mapName == 'Ascent' or mapName == 'ascent':
@@ -440,9 +432,9 @@ async def map(ctx, mapName):
 @client.command(aliases=['Ranks'])
 async def ranks(ctx):
   
-  embed = discord.Embed(title='Valorant Player Statistics', color=0xFF004D, timestamp=ctx.message.created_at)
+  embed = discord.Embed(title='Valorant Rankings', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
@@ -450,9 +442,11 @@ async def ranks(ctx):
 
   embed.set_image(url="https://i.imgur.com/B8YoJQF.png")
 
-  embed.add_field(name='***Starting Off***', value='After playing 20 matches in unranked, you will play 5 ranked games with either unranked players or players who have finished their placement matches. The competitive system will take into account how you are doing against the upper and lower ranked players in your game to determine if you will gain rating or lose rating. \n\nThis is important because you can still technically gain rating on a loss or lose rating on a win (which both are very rare). \n\nAfter completing your first 5 competitive games, Valorant will assign you a rank for your upcoming competitive games. You will be placed in matches with ranks 5 levels (or two ranks) above or below yours (this is also how queuing with your friends work). ', inline=False)
+  embed.add_field(name='Starting Off', value='After playing 20 matches in unranked, you will play 5 ranked games with either unranked players or players who have finished their placement matches.', inline=False)
 
-  embed.add_field(name='***Additional Info***', value='If your friends are 6 levels above or below yours, you will not be able to play with them until you gain rating to match theirs or they gain or lose rating to match yours. ', inline=False)
+  embed.add_field(name='Advancing Ranks', value='The competitive system will take into account how you are doing against the upper and lower ranked players in your game to determine if you will gain rating or lose rating. This is important because you can still technically gain rating on a loss or lose rating on a win (which both are very rare). After completing your first 5 competitive games, Valorant will assign you a rank for your upcoming competitive games. You will be placed in matches with ranks 5 levels (or two ranks) above or below yours (this is also how queuing with your friends work).', inline=False)
+
+  embed.add_field(name='Additional Info', value='If your friends are 6 levels above or below yours, you will not be able to play with them until you gain rating to match theirs or they gain or lose rating to match yours. ', inline=False)
 
   print('RANKS Command Called')
   await ctx.send (embed=embed)
@@ -466,7 +460,7 @@ async def modes(ctx):
 
   embed = discord.Embed (title='**Valorant Game Modes**', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
@@ -474,13 +468,15 @@ async def modes(ctx):
 
   embed.set_image (url='https://guides.gamepressure.com/valorant/gfx/word/472107875.jpg')
 
-  embed.add_field (name='***Ranked Matches***', value='**Duration:** **`30`** to **`40`** **minutes** \n • Bomb (Spike Planting/Defusing) → Standard Mode', inline=False)
+  embed.add_field (name='Unranked Matches', value='**Duration:** `30` to `40` minutes \nStandard Spike Plant & Defusal', inline=False)
 
-  embed.add_field (name='***Unranked Matches***', value='***Duration:*** **`30`** to **`40`** ***minutes*** \n• Standard Mode → Bomb (Spike Planting/Defusing) \n\n***Duration:*** **`8`** to **`12`** ***minutes*** \n• Spike Rush → Bomb (Spike Planting/Defusing) \n Includes various orb mechanics such as Speed Boost and Damage Boost', inline=False)
+  embed.add_field (name='Ranked Matches', value='**Duration:** `30` to `40` minutes \nStandard Spike Plant & Defusal', inline=False)
 
-  embed.add_field (name='***Practice Matches***', value='• Open Range → Freely explore the entire range and all it has to offer \n\n• Shooting Test → Test your gun skills with a variety of shooting challenges \n\n• Spike Planting → Take control of the site, plant the Spike, and defend until detonation \n\n• Spike Defuse → Methodically defeat enemies and defuse the Spike before time runs out', inline=False)
+  embed.add_field (name='Spike Rush', value='**Duration:** `8` to `12` minutes \nStandard Spike  Plant & Defusal, but EVERYONE on attacker side has a spike\n Includes various orb mechanics such as Speed Boost and Damage Boost', inline=False)
 
-  embed.add_field (name='***Upcoming Game Modes***', value='• Team Deathmatch \n• Capture the Flag \n• Free for All', inline=False)
+  embed.add_field (name='Training Range Matches', value='• Open Range → Freely explore the entire range and all it has to offer \n• Shooting Test → Test your gun skills with a variety of shooting challenges \n• Spike Planting → Take control of the site, plant the Spike, and defend until detonation \n• Spike Defuse → Methodically defeat enemies and defuse the Spike before time runs out', inline=False)
+
+  embed.add_field (name='Possible Future Gamemodes', value='• Team Deathmatch \n• Capture the Flag \n• Free for All', inline=False)
 
   print('MODES Command Called')
   await ctx.send (embed=embed)
@@ -492,15 +488,15 @@ async def modes(ctx):
 @client.command(aliases=['Creds'])
 async def creds(ctx):
 
-  embed = discord.Embed (title='**Valorant Creds Info**', color=0xFF004D, timestamp=ctx.message.created_at)
+  embed = discord.Embed (title='**Valorant Credits**', color=0xFF004D, timestamp=ctx.message.created_at)
 
-  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+  embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
   embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
   embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
-  embed.add_field(name='***Creds <:credits_emoji:715298037957656587>***',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
+  embed.add_field(name='<:credits_emoji:715298037957656587> Valorant Credits System',value='• `800` at the first round \n • `3000` for each round win \n • `1900` for each round loss \n • `500` for 2x loss streak \n •  `1000` for loss streaks greater than 2x \n • `200` per kill \n • `300` for planting the spike successfully \n • `5000` at overtime')
 
   print('CREDS Command Called')
   await ctx.send (embed=embed)
@@ -519,23 +515,20 @@ async def ping(ctx):
 
     embed = discord.Embed (title='🏓 Pong!', color=0xFF004D, timestamp=ctx.message.created_at)
 
-    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
     embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
     embed.set_thumbnail(url="https://i.imgur.com/tu4L4oP.jpg")
 
     #Bot Latency
-    embed.add_field(name='***:signal_strength: Bot Latency***',value=(f'`{round(client.latency * 1000)}`ms'),inline=True)
+    embed.add_field(name=':signal_strength: Latency',value=(f'`{round(client.latency * 1000)}`ms'),inline=True)
 
     #CPU Usage
-    embed.add_field(name='***<:cpu_icon:715309843669450853> CPU Usage***',value=(f'`{round(psutil.cpu_percent())}`%'),inline=True)
-
-    #RAM Usage
-    embed.add_field(name='***<:ram_icon:715309388168167484> RAM Usage***',value=(f'`{round(psutil.virtual_memory()[2])}`%'),inline=True)
+    embed.add_field(name=':robot: CPU/RAM Usage',value=(f'CPU → `{round(psutil.cpu_percent())}`% \nRAM → `{round(psutil.virtual_memory()[2])}`%'),inline=True)
 
     #Bot Uptime
-    embed.add_field(name='***:clock: Bot Uptime Duration***',value=(f'`{days}` day(s), `{hours}` hour(s), `{minutes}` min(s), and `{seconds}` second(s) \n\n*uptime displays the amount of time that has passed since the last update/restart to the application*'),inline=False)
+    embed.add_field(name=':chart_with_upwards_trend: Uptime',value=(f'`{days}`d : `{hours}`h : `{minutes}`m : `{seconds}`s'),inline=True)
     
     print('PING Command Called')
     await ctx.send(embed=embed)
@@ -549,7 +542,7 @@ async def botinfo(ctx):
 
     embed=discord.Embed(title='Bot Information', color=0xFF004D, timestamp=ctx.message.created_at)
 
-    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url="https://i.imgur.com/ZRH9UF4.png")
+    embed.set_author(name="Veloxis", url="https://sites.google.com/view/veloxis/home", icon_url=client.user.avatar_url)
     
     embed.set_footer(text = f'Requested by {ctx.author}', icon_url=ctx.author.avatar_url)
 
